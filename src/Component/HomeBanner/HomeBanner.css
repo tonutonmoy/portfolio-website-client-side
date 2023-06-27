@@ -1,0 +1,11 @@
+.home-banner-container{
+
+    background-image: url(../../assets//homeBanner/DSC_0123.jpg);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    box-shadow: 30px 30px 30px black;
+
+    height: 880px;
+    
+}
