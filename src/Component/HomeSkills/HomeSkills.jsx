@@ -17,8 +17,7 @@ const HomeSkills = () => {
 
             <section className=" grid grid-cols-5 gap-10">
 
-                <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline 
-                hover:scale-110 duration-[1s]  ">
+                <div  style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s]">
                     <img className='p-10 w-[300px] h-[200px]' src={html} alt="Shoes" />
                     <div className="card-body">
                         <h2 className=" text-[23px] text-white font-[400] text-center">HTML 5</h2>
@@ -85,7 +84,7 @@ const HomeSkills = () => {
                     </div>
                 </div>
 
-                <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
+                <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s]">
                     <img className='p-10 w-[300px] h-[200px]' src={firebase} alt="Shoes" />
                     <div className="card-body">
                         <h2 className=" text-[23px] text-white font-[400] text-center">Firebase</h2>

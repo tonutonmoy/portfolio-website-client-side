@@ -2,6 +2,7 @@ import HomeAbout from "../HomeAbout/HomeAbout";
 import HomeBanner from "../HomeBanner/HomeBanner";
 import HomeProject from "../HomeProject/HomeProject";
 import HomeSkills from "../HomeSkills/HomeSkills";
+import HomeContact from "./HomeContact/HomeContact";
 
 
 
@@ -16,6 +17,8 @@ const Home = () => {
        <HomeSkills></HomeSkills>
 
        <HomeProject></HomeProject>
+
+       <HomeContact></HomeContact>
     </div>
     );
  

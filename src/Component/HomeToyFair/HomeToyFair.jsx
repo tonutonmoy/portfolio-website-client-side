@@ -28,7 +28,7 @@ const HomeToyFair = () => {
     return (
         <>
 
-            <section style={{ boxShadow: '5px 5px 10px rgb(59 130 246)' }} className="card w-full btn-outline 
+            <section style={{ boxShadow: '5px 5px 15px rgb(59 130 246)' }} className="card w-full btn-outline 
                 hover:scale-110 duration-[1s] border-l-2 border-blue-500">
                 <div>
 
@@ -84,7 +84,7 @@ const HomeToyFair = () => {
 
                 </div>
                 <div className="card-body">
-                    <h2 className="text-[20px] text-white font-[400] my-5 text-center">Holy Child School</h2>
+                    <h2 className="text-[20px] text-white font-[400] my-5 text-center">Toy Fair</h2>
 
 
                     <div className=' '>
