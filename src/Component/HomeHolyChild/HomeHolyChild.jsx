@@ -36,8 +36,8 @@ const HomeHolyChild = () => {
     return (
         <>
 
-            <section style={{ boxShadow: '5px 5px 10px black' }} className="card w-full btn-outline 
-                hover:scale-110 duration-[1s] ">
+            <section style={{ boxShadow: '5px 5px 10px rgb(59 130 246)' }} className="card w-full btn-outline 
+                hover:scale-110 duration-[1s] border-l-2 border-blue-500">
                 <div>
 
 
