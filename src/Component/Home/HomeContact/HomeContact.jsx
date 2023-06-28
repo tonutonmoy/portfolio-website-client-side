@@ -13,29 +13,29 @@ const HomeContact = () => {
 
     const sendEmail = (e) => {
 
-        Swal.fire({
-                    
-            icon: 'success',
-            title: 'Thank you for your message',
-            showConfirmButton: false,
-            timer: 2000,
-            background: 'black',
-            color:'white',
-            
-        })
 
         e.preventDefault();
         console.log(e)
         console.log()
-        // emailjs.sendForm(`${import.meta.env.VITE_SERVICE_ID}`, `${import.meta.env.VITE_TEMPLATE_ID}`, form.current, `${import.meta.env.VITE_PUBLIC_KEY}`)
-        //     .then((result) => {
-        //         console.log(result.text)
-        //         e.target.reset();
+        emailjs.sendForm(`${import.meta.env.VITE_SERVICE_ID}`, `${import.meta.env.VITE_TEMPLATE_ID}`, form.current, `${import.meta.env.VITE_PUBLIC_KEY}`)
+            .then((result) => {
+                console.log(result.text)
+                e.target.reset();
 
-            
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
+                Swal.fire({
+
+                    icon: 'success',
+                    title: 'Thank you for your message',
+                    showConfirmButton: false,
+                    timer: 2000,
+                    background: 'black',
+                    color: 'white',
+
+                });
+
+            }, (error) => {
+                console.log(error.text);
+            });
     };
     return (
         <div className=" mt-[200px]">
