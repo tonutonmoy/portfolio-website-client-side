@@ -1,7 +1,11 @@
 
 import'./HomeBanner.css'
 
+
 const HomeBanner = () => {
+
+
+  
     return (
         <div className='home-banner-container  bg-fixed  relative'  >
 
@@ -13,7 +17,8 @@ const HomeBanner = () => {
 
             
              <div>
-                <button className='btn border-0 btn-outline text-[20px] font-[400]  ring-blue-500 ring-2  hover:scale-105    hover:bg-opacity-0 text-white  '>Download Resume</button>
+                <a    href="Resume.pdf" download='Resume.pdf'
+                    target="__blank" className='btn border-0 btn-outline text-[20px] font-[400]  ring-blue-500 ring-2  hover:scale-105    hover:bg-opacity-0 text-white  '>Download Resume</a>
              </div>
           
           </div>

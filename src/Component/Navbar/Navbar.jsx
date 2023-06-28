@@ -15,7 +15,7 @@ const Navbar = () => {
        </Link>
 
        <Link to='/resume'>
-       <li className=" text-[20px] font-[400] text-white">resume</li>
+       <li className=" text-[20px] font-[400] text-white">Resume</li>
        </Link>
 
        <Link to='/about'>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HomeHolyChild from "../HomeHolyChild/HomeHolyChild";
 import HomeToyFair from "../HomeToyFair/HomeToyFair";
 import HomeTastyRecipes from "../homeTastyRecipes/homeTastyRecipes";
@@ -20,6 +21,11 @@ const HomeProject = () => {
 
 
             </div>
+          
+          <div className="text-center my-16">
+          <Link to='/projects' className='px-3 py-2 rounded-[10px] border-0 btn-outline text-[20px] font-[400]  ring-blue-500 ring-2  hover:scale-105    hover:bg-opacity-0 text-white  '>See more</Link>
+          </div>
+
         </div>
     );
 };
