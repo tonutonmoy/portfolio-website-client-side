@@ -24,72 +24,81 @@ const HomeTastyRecipes = () => {
     return (
         <>
 
-            <section style={{ boxShadow: '5px 5px 15px rgb(59 130 246)' }} className="card w-full btn-outline
+            <section data-aos="flip-right"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+            >
+
+                <div style={{ boxShadow: '5px 5px 15px rgb(59 130 246)' }} className="card w-full btn-outline
                 hover:scale-110 duration-[1s]  border-l-2 border-blue-500 ">
-                <div>
+
+
+                    <div>
 
 
 
-                    <Swiper
-                        pagination={{
-                            type: "progressbar",
-                        }}
-                        navigation={true}
-                        modules={[Pagination, Navigation]}
-                        className="mySwiper  rounded-t-[10px] "
-                    >
-                        <SwiperSlide>
-                            <img src={homeBanner} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={homeChef} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={homeFoodSafety} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={homeReview} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={singleChef} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={allRecipes} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={footer} alt="" />
-                        </SwiperSlide>
-                     
-
-                    </Swiper>
+                        <Swiper
+                            pagination={{
+                                type: "progressbar",
+                            }}
+                            navigation={true}
+                            modules={[Pagination, Navigation]}
+                            className="mySwiper  rounded-t-[10px] "
+                        >
+                            <SwiperSlide>
+                                <img src={homeBanner} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={homeChef} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={homeFoodSafety} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={homeReview} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={singleChef} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={allRecipes} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={footer} alt="" />
+                            </SwiperSlide>
 
 
+                        </Swiper>
 
 
-                </div>
-                <div className="card-body">
-                    <h2 className="text-[20px] text-white font-[400] my-5 text-center">Testy Recipes</h2>
-
-
-                    <div className=' '>
-
-                        <div className='flex gap-3 my-10 text-center'>
-
-                            <a className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 " href="https://github.com/tonutonmoy/tasty-recipes-client-side">Client</a>
-
-                            <a className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 " href="https://github.com/tonutonmoy/tasty-recipes-server-side">Server</a>
-
-                            <a className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 " href="https://tasty-recipes-3afce.firebaseapp.com/">Live</a>
-
-                        </div>
-
-
-
-                        <button className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 " 
-                        onClick={() => window.my_modal_3.showModal()}>See details</button>
 
 
                     </div>
+                    <div className="card-body">
+                        <h2 className="text-[20px] text-white font-[400] my-5 text-center">Testy Recipes</h2>
+
+
+                        <div className=' '>
+
+                            <div className='flex gap-3 my-10 text-center'>
+
+                                <a className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 " href="https://github.com/tonutonmoy/tasty-recipes-client-side">Client</a>
+
+                                <a className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 " href="https://github.com/tonutonmoy/tasty-recipes-server-side">Server</a>
+
+                                <a className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 " href="https://tasty-recipes-3afce.firebaseapp.com/">Live</a>
+
+                            </div>
+
+
+
+                            <button className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 "
+                                onClick={() => window.my_modal_3.showModal()}>See details</button>
+
+
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -112,28 +121,28 @@ const HomeTastyRecipes = () => {
                                 modules={[Pagination, Navigation]}
                                 className="mySwiper  rounded-t-[10px] "
                             >
-                         <SwiperSlide>
-                            <img src={homeBanner} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={homeChef} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={homeFoodSafety} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={homeReview} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={singleChef} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={allRecipes} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={footer} alt="" />
-                        </SwiperSlide>
-                       
+                                <SwiperSlide>
+                                    <img src={homeBanner} alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={homeChef} alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={homeFoodSafety} alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={homeReview} alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={singleChef} alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={allRecipes} alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={footer} alt="" />
+                                </SwiperSlide>
+
 
 
                             </Swiper>

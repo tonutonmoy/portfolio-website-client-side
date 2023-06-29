@@ -28,8 +28,14 @@ const HomeToyFair = () => {
     return (
         <>
 
-            <section style={{ boxShadow: '5px 5px 15px rgb(59 130 246)' }} className="card w-full btn-outline 
+            <section data-aos="flip-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                >
+
+                <div style={{ boxShadow: '5px 5px 15px rgb(59 130 246)' }} className="card w-full btn-outline 
                 hover:scale-110 duration-[1s] border-l-2 border-blue-500">
+                      
                 <div>
 
 
@@ -75,7 +81,7 @@ const HomeToyFair = () => {
                         <SwiperSlide>
                             <img src={footer} alt="" />
                         </SwiperSlide>
-                       
+
 
                     </Swiper>
 
@@ -101,12 +107,13 @@ const HomeToyFair = () => {
 
 
 
-                        <button className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 " 
-                        onClick={() => window.my_modal_2.showModal()}>See details</button>
+                        <button className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 "
+                            onClick={() => window.my_modal_2.showModal()}>See details</button>
 
 
                     </div>
                 </div>
+                </div> 
             </section>
 
 
@@ -128,36 +135,36 @@ const HomeToyFair = () => {
                                 modules={[Pagination, Navigation]}
                                 className="mySwiper  rounded-t-[10px] "
                             >
-                              <SwiperSlide>
-                            <img src={homeBanner} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={homePhoto} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={homeTab} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={homePartners} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={allToys} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={addAToy} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={myToy} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={update} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={viewToy} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={footer} alt="" />
-                        </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={homeBanner} alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={homePhoto} alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={homeTab} alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={homePartners} alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={allToys} alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={addAToy} alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={myToy} alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={update} alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={viewToy} alt="" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={footer} alt="" />
+                                </SwiperSlide>
 
 
                             </Swiper>

@@ -52,34 +52,57 @@ const HomeContact = () => {
                 <form ref={form} onSubmit={sendEmail}
                     style={{ boxShadow: '5px 5px 30px rgb(59 130 246)' }} className="card-body border-r-8 border-l-8 border-blue-500  w-full  duration-[1s]  " >
 
-                    <div className="form-control my-5 ">
+                    <div
+                        className="form-control my-5 ">
                         <label className="label my-3">
                             <p className="text-[20px] text-white font-[500] ">Name</p>
                         </label>
-                        <input type="text" placeholder="name" name="user_name" className="input input-bordered
+
+                        <div data-aos="fade-right"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
+                            <input type="text" placeholder="name" name="user_name" className="input input-bordered
         p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2" />
+                        </div>
+
                     </div>
 
                     <div className="form-control">
                         <label className="label my-3 ">
                             <p className="text-[20px] text-white font-[500] ">Email</p>
                         </label>
-                        <input type="email" placeholder="email" name="user_email" className="input input-bordered
+
+                        <div data-aos="fade-left"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
+                            <input type="email" placeholder="email" name="user_email" className="input input-bordered
         p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2" />
+                        </div>
+
                     </div>
 
                     <div className="form-control my-5">
                         <label className="label my-3">
                             <p className="text-[20px] text-white font-[500] ">Message</p>
                         </label>
-                        <textarea placeholder="message" name="message" className="textarea textarea-bordered textarea-lg w-full h-[150px]
+
+                        <div data-aos="fade-right"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
+                            <textarea placeholder="message" name="message" className="textarea textarea-bordered textarea-lg w-full h-[150px]
         p-2 rounded-md border-0 btn-outline text-[15px] font-[400]   hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2" ></textarea>
+                        </div>
+
                     </div>
 
 
+                    <div data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000">
 
-                    <input type='submit' value='Submit' className="py-3 my-10 rounded-md border-0 btn-outline text-[20px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 "
-                    />
+                        <input type='submit' value='Submit' className="py-3 my-10 rounded-md border-0 btn-outline text-[20px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 "
+                        />
+                    </div>
 
                 </form>
 

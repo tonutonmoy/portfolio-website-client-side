@@ -17,80 +17,195 @@ const HomeSkills = () => {
 
             <section className=" grid grid-cols-5 gap-10">
 
-                <div  style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s]">
-                    <img className='p-10 w-[300px] h-[200px]' src={html} alt="Shoes" />
+
+
+
+
+                <div data-aos="fade-down-right"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
+                  
+
+                     <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s]">
+                     <img className='p-10 w-[300px] h-[200px]' src={html} alt="Shoes" />
                     <div className="card-body">
                         <h2 className=" text-[23px] text-white font-[400] text-center">HTML 5</h2>
                       
                     </div>
+                     </div>
+
                 </div>
-                <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
-                    <img className='p-10 w-[300px] h-[200px]' src={css} alt="Shoes" />
+
+
+
+
+
+
+
+                <div data-aos="fade-down-right"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
+                  
+                  <div style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
+                  <img className='p-10 w-[300px] h-[200px]' src={css} alt="Shoes" />
                     <div className="card-body">
                         <h2 className=" text-[23px] text-white font-[400] text-center">CSS 3</h2>
                       
                     </div>
+                  </div>
                 </div>
-                <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
-                    <img className='p-10 w-[300px] h-[200px]' src={bootstrap} alt="Shoes" />
+
+
+
+
+
+
+
+                <div data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
+
+                   <div style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
+                   <img className='p-10 w-[300px] h-[200px]' src={bootstrap} alt="Shoes" />
                     <div className="card-body">
                         <h2 className=" text-[23px] text-white font-[400] text-center">Bootstrap</h2>
                       
                     </div>
+                   </div>
                 </div>
-                <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
-                    <img className='p-10 w-[300px] h-[200px]' src={tailwind} alt="Shoes" />
+
+
+
+
+
+
+
+
+                <div data-aos="fade-down-left"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
+
+                  <div  style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
+                  <img className='p-10 w-[300px] h-[200px]' src={tailwind} alt="Shoes" />
                     <div className="card-body">
                         <h2 className=" text-[23px] text-white font-[400] text-center">Tailwind</h2>
                       
                     </div>
+                  </div>
                 </div>
-                <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
-                    <img className='p-10 w-[300px] h-[200px]' src={javascript} alt="Shoes" />
+
+
+
+
+
+
+
+
+
+                <div  data-aos="fade-down-left"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
+
+                  <div  style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
+                  <img className='p-10 w-[300px] h-[200px]' src={javascript} alt="Shoes" />
                     <div className="card-body">
                         <h2 className=" text-[23px] text-white font-[400] text-center">Javascript</h2>
                       
                     </div>
+                  </div>
                 </div>
-                <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
+
+
+
+
+
+
+                <div data-aos="fade-up-right"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
+
+                    <div style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                     <img className='p-10 w-[300px] h-[200px]' src={react} alt="Shoes" />
                     <div className="card-body">
                         <h2 className=" text-[23px] text-white font-[400] text-center">React</h2>
                       
                     </div>
+                    </div>
                 </div>
-                <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
-                    <img className='p-10 w-[300px] h-[200px]' src={node} alt="Shoes" />
+
+
+
+
+
+
+                <div data-aos="fade-up-right"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
+
+                  <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
+                  <img className='p-10 w-[300px] h-[200px]' src={node} alt="Shoes" />
                     <div className="card-body">
                         <h2 className=" text-[23px] text-white font-[400] text-center">Node</h2>
                       
                     </div>
+                  </div>
                 </div>
 
 
-                <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
-                    <img className='p-10 w-[300px] h-[200px]' src={express} alt="Shoes" />
+
+
+
+
+
+                <div data-aos="fade-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
+
+                   <div  style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
+                   <img className='p-10 w-[300px] h-[200px]' src={express} alt="Shoes" />
                     <div className="card-body">
                         <h2 className=" text-[23px] text-white font-[400] text-center">Express</h2>
                       
                     </div>
+                   </div>
                 </div>
 
-                <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
-                    <img className='p-10 w-[300px] h-[200px]' src={mongodb} alt="Shoes" />
+
+
+
+
+
+
+                <div data-aos="fade-up-left"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000" >
+
+                   <div style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
+                   <img className='p-10 w-[300px] h-[200px]' src={mongodb} alt="Shoes" />
                     <div className="card-body">
                         <h2 className=" text-[23px] text-white font-[400] text-center">MongoDB</h2>
                       
                     </div>
+                   </div>
                 </div>
 
-                <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s]">
-                    <img className='p-10 w-[300px] h-[200px]' src={firebase} alt="Shoes" />
+
+
+
+
+                <div data-aos="fade-up-left"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
+
+                   <div  style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s]">
+                   <img className='p-10 w-[300px] h-[200px]' src={firebase} alt="Shoes" />
                     <div className="card-body">
                         <h2 className=" text-[23px] text-white font-[400] text-center">Firebase</h2>
                       
                     </div>
+                   </div>
                 </div>
+                
 
             </section>
 

@@ -36,94 +36,101 @@ const HomeHolyChild = () => {
     return (
         <>
 
-            <section style={{ boxShadow: '5px 5px 15px rgb(59 130 246)' }} className="card w-full btn-outline 
-                hover:scale-110 duration-[1s] border-l-2 border-blue-500">
-                <div>
+            <section data-aos="flip-left"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+            >
+                <div style={{ boxShadow: '5px 5px 15px rgb(59 130 246)' }} className="card w-full btn-outline hover:scale-110 duration-[1s] border-l-2 border-blue-500">
 
 
 
-                    <Swiper
-                        pagination={{
-                            type: "progressbar",
-                        }}
-                        navigation={true}
-                        modules={[Pagination, Navigation]}
-                        className="mySwiper  rounded-t-[10px] "
-                    >
-                        <SwiperSlide>
-                            <img src={home} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={home1} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={home2} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={home3} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={login} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={allClasses} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={selectedClasses} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={payment} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={paymentHistory} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={enrolledClasses} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={addAClasses} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={myClasses} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={manageClasses} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={manageUsers} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={footer} alt="" />
-                        </SwiperSlide>
-
-
-                    </Swiper>
+                    <div>
 
 
 
+                        <Swiper
+                            pagination={{
+                                type: "progressbar",
+                            }}
+                            navigation={true}
+                            modules={[Pagination, Navigation]}
+                            className="mySwiper  rounded-t-[10px] "
+                        >
+                            <SwiperSlide>
+                                <img src={home} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={home1} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={home2} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={home3} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={login} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={allClasses} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={selectedClasses} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={payment} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={paymentHistory} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={enrolledClasses} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={addAClasses} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={myClasses} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={manageClasses} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={manageUsers} alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={footer} alt="" />
+                            </SwiperSlide>
 
-                </div>
-                <div className="card-body">
-                    <h2 className="text-[20px] text-white font-[400] my-5 text-center">Holy Child School</h2>
+
+                        </Swiper>
 
 
-                    <div className=' '>
 
-                        <div className='flex gap-3 my-10 text-center'>
 
-                            <a className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 " href="https://github.com/tonutonmoy/holy-child-summer-camp-client-side">Client</a>
+                    </div>
+                    <div className="card-body">
+                        <h2 className="text-[20px] text-white font-[400] my-5 text-center">Holy Child School</h2>
 
-                            <a className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 " href="https://github.com/tonutonmoy/holy-child-summer-camp-server-side">Server</a>
 
-                            <a className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 " href="https://holy-school-7bd2e.firebaseapp.com/">Live</a>
+                        <div className=' '>
+
+                            <div className='flex gap-3 my-10 text-center'>
+
+                                <a className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 " href="https://github.com/tonutonmoy/holy-child-summer-camp-client-side">Client</a>
+
+                                <a className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 " href="https://github.com/tonutonmoy/holy-child-summer-camp-server-side">Server</a>
+
+                                <a className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 " href="https://holy-school-7bd2e.firebaseapp.com/">Live</a>
+
+                            </div>
+
+
+                            <button className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 "
+                                onClick={() => window.my_modal_1.showModal()}>See details</button>
+
 
                         </div>
-
-
-                        <button className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 " 
-                        onClick={() => window.my_modal_1.showModal()}>See details</button>
-
-
                     </div>
                 </div>
             </section>
