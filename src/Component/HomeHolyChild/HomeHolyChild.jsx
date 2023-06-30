@@ -57,49 +57,49 @@ const HomeHolyChild = () => {
                             className="mySwiper  rounded-t-[10px] "
                         >
                             <SwiperSlide>
-                                <img src={home} alt="" />
+                                <img className='h-[250px]' src={home} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={home1} alt="" />
+                                <img className='h-[250px]' src={home1} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={home2} alt="" />
+                                <img className='h-[250px]' src={home2} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={home3} alt="" />
+                                <img className='h-[250px]' src={home3} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={login} alt="" />
+                                <img className='h-[250px]' src={login} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={allClasses} alt="" />
+                                <img className='h-[250px]' src={allClasses} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={selectedClasses} alt="" />
+                                <img className='h-[250px]' src={selectedClasses} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={payment} alt="" />
+                                <img className='h-[250px]' src={payment} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={paymentHistory} alt="" />
+                                <img className='h-[250px]' src={paymentHistory} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={enrolledClasses} alt="" />
+                                <img className='h-[250px]' src={enrolledClasses} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={addAClasses} alt="" />
+                                <img className='h-[250px]' src={addAClasses} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={myClasses} alt="" />
+                                <img className='h-[250px]' src={myClasses} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={manageClasses} alt="" />
+                                <img className='h-[250px]' src={manageClasses} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={manageUsers} alt="" />
+                                <img className='h-[250px]' src={manageUsers} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={footer} alt="" />
+                                <img className='h-[250px]' src={footer} alt="" />
                             </SwiperSlide>
 
 

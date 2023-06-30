@@ -49,37 +49,37 @@ const HomeToyFair = () => {
                         className="mySwiper  rounded-t-[10px] "
                     >
                         <SwiperSlide>
-                            <img src={homeBanner} alt="" />
+                            <img className='h-[250px]' src={homeBanner} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={homePhoto} alt="" />
+                            <img className='h-[250px]' src={homePhoto} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={homeTab} alt="" />
+                            <img className='h-[250px]' src={homeTab} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={homePartners} alt="" />
+                            <img className='h-[250px]' src={homePartners} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={homeServices} alt="" />
+                            <img className='h-[250px]' src={homeServices} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={allToys} alt="" />
+                            <img className='h-[250px]' src={allToys} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={addAToy} alt="" />
+                            <img className='h-[250px]' src={addAToy} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={myToy} alt="" />
+                            <img className='h-[250px]' src={myToy} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={update} alt="" />
+                            <img className='h-[250px]' src={update} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={viewToy} alt="" />
+                            <img className='h-[250px]' src={viewToy} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={footer} alt="" />
+                            <img className='h-[250px]' src={footer} alt="" />
                         </SwiperSlide>
 
 
@@ -174,7 +174,7 @@ const HomeToyFair = () => {
 
                         </div>
                         <div className="card-body">
-                            <h2 className="text-[25px] text-white font-[400] my-5 text-center">HolyChild  school</h2>
+                            <h2 className="text-[20px] text-white font-[400] my-5 text-center">HolyChild  school</h2>
 
                             <p className=' text-white text-[18px] font-[400]'>
                                 <span className=''>Description:  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in blanditiis aliquam esse rem! Soluta rem eaque eligendi veniam nam porro praesentium, ab quo inventore tempore maiores, laboriosam quia sit.</span>

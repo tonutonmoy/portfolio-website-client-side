@@ -46,25 +46,25 @@ const HomeTastyRecipes = () => {
                             className="mySwiper  rounded-t-[10px] "
                         >
                             <SwiperSlide>
-                                <img src={homeBanner} alt="" />
+                                <img className='h-[250px]' src={homeBanner} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={homeChef} alt="" />
+                                <img className='h-[250px]' src={homeChef} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={homeFoodSafety} alt="" />
+                                <img className='h-[250px]' src={homeFoodSafety} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={homeReview} alt="" />
+                                <img className='h-[250px]' src={homeReview} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={singleChef} alt="" />
+                                <img className='h-[250px]' src={singleChef} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={allRecipes} alt="" />
+                                <img className='h-[250px]' src={allRecipes} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={footer} alt="" />
+                                <img className='h-[250px]' src={footer} alt="" />
                             </SwiperSlide>
 
 
@@ -122,25 +122,25 @@ const HomeTastyRecipes = () => {
                                 className="mySwiper  rounded-t-[10px] "
                             >
                                 <SwiperSlide>
-                                    <img src={homeBanner} alt="" />
+                                    <img  src={homeBanner} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={homeChef} alt="" />
+                                    <img  src={homeChef} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={homeFoodSafety} alt="" />
+                                    <img  src={homeFoodSafety} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={homeReview} alt="" />
+                                    <img  src={homeReview} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={singleChef} alt="" />
+                                    <img  src={singleChef} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={allRecipes} alt="" />
+                                    <img  src={allRecipes} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={footer} alt="" />
+                                    <img  src={footer} alt="" />
                                 </SwiperSlide>
 
 

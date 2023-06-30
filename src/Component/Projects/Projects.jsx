@@ -9,7 +9,7 @@ const Projects = () => {
             <h3 className=' text-white text-[30px] text-[500] text-center my-[100px]  border-b-2 pb-2  border-blue-500 w-[27%] mx-auto    '>All Projects</h3>
 
 
-            <div className=" grid md:grid-cols-3 gap-20">
+            <div className=" grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-10">
 
                 <HomeHolyChild></HomeHolyChild>
                 <HomeToyFair></HomeToyFair>
