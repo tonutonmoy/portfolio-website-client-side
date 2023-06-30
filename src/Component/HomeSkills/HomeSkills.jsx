@@ -15,15 +15,15 @@ const HomeSkills = () => {
             <h3 className=' text-white text-[30px] text-[500] text-center my-[100px]  border-b-2 pb-2  border-blue-500 w-[27%] mx-auto    '>My Skills</h3>
 
 
-            <section className=" grid grid-cols-5 gap-10">
+            <section className=" grid grid-cols-2 md:grid-cols-5 gap-10">
 
 
 
 
 
-                <div data-aos="fade-down-right"
+                <div data-aos="fade-up"
                             data-aos-easing="linear"
-                            data-aos-duration="1000">
+                            data-aos-duration="1500">
                   
 
                      <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s]">
@@ -42,9 +42,9 @@ const HomeSkills = () => {
 
 
 
-                <div data-aos="fade-down-right"
+                <div data-aos="fade-up"
                             data-aos-easing="linear"
-                            data-aos-duration="1000">
+                            data-aos-duration="1500">
                   
                   <div style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                   <img className='p-10 w-[300px] h-[200px]' src={css} alt="Shoes" />
@@ -61,9 +61,9 @@ const HomeSkills = () => {
 
 
 
-                <div data-aos="fade-down"
+                <div data-aos="fade-up"
                             data-aos-easing="linear"
-                            data-aos-duration="1000">
+                            data-aos-duration="1500">
 
                    <div style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                    <img className='p-10 w-[300px] h-[200px]' src={bootstrap} alt="Shoes" />
@@ -81,9 +81,9 @@ const HomeSkills = () => {
 
 
 
-                <div data-aos="fade-down-left"
+                <div data-aos="fade-up"
                             data-aos-easing="linear"
-                            data-aos-duration="1000">
+                            data-aos-duration="1500">
 
                   <div  style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                   <img className='p-10 w-[300px] h-[200px]' src={tailwind} alt="Shoes" />
@@ -102,9 +102,9 @@ const HomeSkills = () => {
 
 
 
-                <div  data-aos="fade-down-left"
+                <div  data-aos="fade-up"
                             data-aos-easing="linear"
-                            data-aos-duration="1000">
+                            data-aos-duration="1500">
 
                   <div  style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                   <img className='p-10 w-[300px] h-[200px]' src={javascript} alt="Shoes" />
@@ -120,9 +120,9 @@ const HomeSkills = () => {
 
 
 
-                <div data-aos="fade-up-right"
+                <div data-aos="fade-down"
                             data-aos-easing="linear"
-                            data-aos-duration="1000">
+                            data-aos-duration="1500">
 
                     <div style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                     <img className='p-10 w-[300px] h-[200px]' src={react} alt="Shoes" />
@@ -138,9 +138,9 @@ const HomeSkills = () => {
 
 
 
-                <div data-aos="fade-up-right"
+                <div data-aos="fade-down"
                             data-aos-easing="linear"
-                            data-aos-duration="1000">
+                            data-aos-duration="1500">
 
                   <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                   <img className='p-10 w-[300px] h-[200px]' src={node} alt="Shoes" />
@@ -157,9 +157,9 @@ const HomeSkills = () => {
 
 
 
-                <div data-aos="fade-up"
+                <div data-aos="fade-down"
                             data-aos-easing="linear"
-                            data-aos-duration="1000">
+                            data-aos-duration="1500">
 
                    <div  style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                    <img className='p-10 w-[300px] h-[200px]' src={express} alt="Shoes" />
@@ -176,9 +176,9 @@ const HomeSkills = () => {
 
 
 
-                <div data-aos="fade-up-left"
+                <div data-aos="fade-down"
                             data-aos-easing="linear"
-                            data-aos-duration="1000" >
+                            data-aos-duration="1500" >
 
                    <div style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                    <img className='p-10 w-[300px] h-[200px]' src={mongodb} alt="Shoes" />
@@ -193,9 +193,9 @@ const HomeSkills = () => {
 
 
 
-                <div data-aos="fade-up-left"
+                <div data-aos="fade-down"
                             data-aos-easing="linear"
-                            data-aos-duration="1000">
+                            data-aos-duration="1500">
 
                    <div  style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s]">
                    <img className='p-10 w-[300px] h-[200px]' src={firebase} alt="Shoes" />
