@@ -38,8 +38,8 @@ const HomeContact = () => {
             });
     };
     return (
-        <div className=" mt-[200px] py-10">
-            <h3 className=' text-white text-[30px] text-[500] text-center my-[100px]  border-b-2 pb-2  border-blue-500 w-[27%] mx-auto    '>Contact Me</h3>
+        <div className=" pt-[20px] py-10">
+            <h3  className=' text-white text-[30px] text-[500] text-center my-[100px]  border-b-2 pb-2  border-blue-500 w-[27%] mx-auto    '>Contact Me</h3>
 
 
             <div className=" w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 ">

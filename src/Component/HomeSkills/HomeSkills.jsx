@@ -11,8 +11,8 @@ import firebase from '../../assets/homeSkills/1175544_firebase_google_icon.png'
 
 const HomeSkills = () => {
     return (
-        <div className='w-[90%] mx-auto'>
-            <h3 className=' text-white text-[30px] text-[500] text-center my-[100px]  border-b-2 pb-2  border-blue-500 w-[27%] mx-auto    '>My Skills</h3>
+        <div className='w-[90%] mx-auto pt-[20px]'>
+            <h3  className=' text-white text-[30px] text-[500] text-center my-[100px]  border-b-2 pb-2  border-blue-500 w-[27%] mx-auto    '>My Skills</h3>
 
 
             <section className=" grid grid-cols-2 md:grid-cols-5 gap-10">

@@ -1,8 +1,19 @@
 import { Link } from 'react-router-dom';
-import img from '../../assets/homeAbout/DSC_0064.jpg'
+import img1 from '../../assets/homeAbout/DSC06733.jpg'
+import img2 from '../../assets/homeAbout/DSC06736.jpg'
+import img3 from '../../assets/homeAbout/DSC06738.jpg'
+import img4 from '../../assets/homeAbout/DSC06742.jpg'
+import img5 from '../../assets/homeAbout/DSC06750.jpg'
+import img6 from '../../assets/homeAbout/DSC06751.jpg'
+import img7 from '../../assets/homeAbout/DSC06752.jpg'
+
 
 
 const HomeAbout = () => {
+
+
+
+
   return (
     <div className='w-[90%] mx-auto my-[120px]  py-[120px]'>
 
@@ -18,12 +29,18 @@ const HomeAbout = () => {
 
         >
 
-          <div style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }} className='p-10  border-l-4 border-blue-500
+          <div id='tonu' style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }} className='p-10  border-l-4 border-blue-500
                  rounded-[50%] relative home-about-img-section group  '>
-            <span style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }} className='text-white md:text-[50px] text-[30px] font-[500] absolute top-[45%] left-[15%]  ring-4  px-10  ml-[-1000px]  group-hover:ml-0  group-hover:inline  duration-[2s]	'>MERN STACK</span>
+            {/* <span style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }} className='text-white md:text-[50px] text-[30px] font-[500] absolute top-[45%] left-[15%]  ring-4  px-10  ml-[-1000px]  group-hover:ml-0  group-hover:inline  duration-[2s]	'>MERN STACK</span> */}
 
 
-            <img className=' md:h-[700px] h-[500px]  w-full  hover:scale-105 duration-[2s]  border-l-[10px] border-blue-500 rounded-[30px] group-hover:opacity-0 group-hover:border-blue-500/10    ' src={img} alt=""
+            <img className=' md:h-[700px] h-[500px] absolute top-[5%] left-[1%]   ml-[-1000px] rounded-[50%] group-hover:ml-0   w-full  hover:scale-105 duration-[2s]  border-l-[10px] border-blue-500  group-hover:border-blue-500/10    ' src={img1} alt=""
+              style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }} />
+
+
+
+
+            <img className=' md:h-[700px] h-[500px]  w-full  hover:scale-105 duration-[2s]  border-l-[10px] border-blue-500 rounded-[30px] group-hover:opacity-0 group-hover:border-blue-500/10    ' src={img2} alt=""
               style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }} />
 
           </div>

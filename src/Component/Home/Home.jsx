@@ -1,3 +1,4 @@
+
 import HomeAbout from "../HomeAbout/HomeAbout";
 import HomeBanner from "../HomeBanner/HomeBanner";
 import HomeProject from "../HomeProject/HomeProject";
@@ -8,9 +9,18 @@ import HomeContact from "./HomeContact/HomeContact";
 
 const Home = () => {
 
+
+    const title= document.getElementById('title')
+
+    title.innerText='Home' 
+   
+
     return(
 
+
     <div >
+
+
        <HomeBanner></HomeBanner>
 
        <HomeAbout></HomeAbout>
