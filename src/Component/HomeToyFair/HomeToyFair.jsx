@@ -174,11 +174,31 @@ const HomeToyFair = () => {
 
                         </div>
                         <div className="card-body">
-                            <h2 className="text-[20px] text-white font-[400] my-5 text-center">HolyChild  school</h2>
+                            <h2 className="text-[20px] text-white font-[400] my-5 text-center">Toy Fair</h2>
 
-                            <p className=' text-white text-[18px] font-[400]'>
-                                <span className=''>Description:  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in blanditiis aliquam esse rem! Soluta rem eaque eligendi veniam nam porro praesentium, ab quo inventore tempore maiores, laboriosam quia sit.</span>
-                            </p>
+                            <div className=' text-white text-[18px] font-[400]'>
+                                <span className=''>This is a kids toy car website.It's a full Stack website.This project is completed with MERN.Many technologies are used in this project and it has many features, some examples are given below.</span>
+
+                                <section className='my-10'>
+                                    <h3 className=' font-[500] mb-1' >Features:</h3>
+                                    <p>* Here you can open an account and upload your product.</p>
+                                    <p>* user can update the product if user want.</p>
+                                    <p>* Users can delete the product if they want.</p>
+                                    <p>* Here you can get the product of your choice by vehicle name and category.</p>
+                                  
+                                </section>
+
+                                <section className='my-10'>
+                                    <h3 className='font-[500] mb-1'> Packages/ Technology:</h3>
+                                    <p>* React Router</p>
+                                    <p>* Tailwind</p>
+                                    <p>* Bootstrap</p>
+                                    <p>* Node(express)</p>
+                                    <p>* Firebase</p>
+                                    <p>* MongoDb</p>
+                                    <p>* Aos and much more.</p>
+                                </section>
+                            </div>
 
                         </div>
                     </section>

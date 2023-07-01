@@ -122,25 +122,25 @@ const HomeTastyRecipes = () => {
                                 className="mySwiper  rounded-t-[10px] "
                             >
                                 <SwiperSlide>
-                                    <img  src={homeBanner} alt="" />
+                                    <img src={homeBanner} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img  src={homeChef} alt="" />
+                                    <img src={homeChef} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img  src={homeFoodSafety} alt="" />
+                                    <img src={homeFoodSafety} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img  src={homeReview} alt="" />
+                                    <img src={homeReview} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img  src={singleChef} alt="" />
+                                    <img src={singleChef} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img  src={allRecipes} alt="" />
+                                    <img src={allRecipes} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img  src={footer} alt="" />
+                                    <img src={footer} alt="" />
                                 </SwiperSlide>
 
 
@@ -152,12 +152,33 @@ const HomeTastyRecipes = () => {
 
                         </div>
                         <div className="card-body">
-                            <h2 className="text-[25px] text-white font-[400] my-5 text-center">HolyChild  school</h2>
+                            <h2 className="text-[25px] text-white font-[400] my-5 text-center">Tasty Recipes</h2>
 
-                            <p className=' text-white text-[18px] font-[400]'>
-                                <span className=''>Description:  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in blanditiis aliquam esse rem! Soluta rem eaque eligendi veniam nam porro praesentium, ab quo inventore tempore maiores, laboriosam quia sit.</span>
-                            </p>
+                            <div className=' text-white text-[18px] font-[400]'>
+                                <span className=''>This is a recipe website.It's a full Stack website.This project is completed with MERN.But here the back end is used very little and the front end is given more focusMany technologies are used in this project and it has many features, some examples are given below.</span>
 
+                                <section className='my-10'>
+                                    <h3 className=' font-[500] mb-1' >Features:</h3>
+                                    <p>* The homepage has four sections. the first being the banner,The second 6t card is of Indian chef,The third section has
+
+                                        food safety details,The fourth section has customer reviews,and There are navbar and footer..</p>
+                                    <p>* There is a registration form on the registration page.</p>
+                                    <p>* There is a Login form on the Login page.</p>
+                                    <p>* The recipe page has chef details and has three recipe cards.</p>
+
+                                </section>
+
+                                <section className='my-10'>
+                                    <h3 className='font-[500] mb-1'> Packages/ Technology:</h3>
+                                    <p>* React Router</p>
+                                    <p>* Tailwind</p>
+                                    <p>* Bootstrap</p>
+                                    <p>* Node(express)</p>
+                                    <p>* Firebase</p>
+                                    <p>* MongoDb</p>
+                                    
+                                </section>
+                            </div>
                         </div>
                     </section>
 

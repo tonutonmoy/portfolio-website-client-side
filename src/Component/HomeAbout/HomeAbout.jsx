@@ -11,7 +11,9 @@ import img7 from '../../assets/homeAbout/DSC06752.jpg'
 
 const HomeAbout = () => {
 
+  const title = document.getElementById('title')
 
+  console.log(title.innerText)
 
 
   return (
@@ -49,11 +51,18 @@ const HomeAbout = () => {
         <section data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500" >
-          <h3 className=' text-white text-[30px] text-[500] text-center my-[100px]  border-b-2 pb-2  border-blue-500 w-[27%] mx-auto    '>About Me</h3>
-          <p className=" text-white text-[20px] font-[400]  hover:scale-110 duration-[2s]">My name is Showmik arifen Tonmoy, and I am a junior web developer with nearly 12 months of learning experience. I have acquired a diverse skill set, including proficiency in React.js, HTML, CSS, Bootstrap, Tailwind, JavaScript, Express.js, Node.js,FireBase,andMongoDB. I am also knowledgeable about authentication using Google Firebase and proficient in utilizing various development tools... <br /> <Link to='/about' className='p-2  rounded-md border-0 btn-outline text-[15px] font-[400]   hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2  '>See More</Link>
+          <h3 className={` text-white text-[30px] text-[500] text-center ${title.innerText==='Home'?'  my-[100px]': 'mb-[70px]  mt-[30px]'}  border-b-2 pb-2  border-blue-500 w-[27%] mx-auto    `}>About Me</h3>
+          <p className=" text-white text-[20px] font-[400]  hover:scale-110 duration-[2s]">My name is Showmik arifen Tonmoy, and I am a junior web developer with nearly 12 months of learning experience. I have acquired a diverse skill set, including proficiency in React.js, HTML, CSS, Bootstrap, Tailwind, JavaScript, Express.js, Node.js,FireBase,MongoDB
+            and many libraries also. I am also knowledgeable about authentication using Google Firebase and proficient in utilizing various development tools... <br /> {title.innerText === 'Home' && <Link to='/about' className='p-2  rounded-md border-0 btn-outline text-[15px] font-[400]   hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2  '>See More</Link>}
 
+            {title.innerText === 'About' && <span>
 
+              I recently completed an intensive web development course at Programming Hero, where I honed my skills in the MERN stack. Equipped with a solid foundation in JavaScript, I thrive on crafting interactive and responsive user interfaces.My educational background, combined with hands-on experience in building applications using MongoDB, Express.js, React, and Node.js, enables me to develop robust and scalable solutions. I am passionate about staying up-to-date with the latest industry trends and continuously expanding my knowledge to deliver cutting-edge projects.
+            </span>}
           </p>
+
+
+
 
         </section>
 

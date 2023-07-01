@@ -210,9 +210,33 @@ const HomeHolyChild = () => {
                         <div className="card-body">
                             <h2 className="text-[25px] text-white font-[400] my-5 text-center">HolyChild  school</h2>
 
-                            <p className=' text-white text-[18px] font-[400]'>
-                                <span className=''>Description:  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in blanditiis aliquam esse rem! Soluta rem eaque eligendi veniam nam porro praesentium, ab quo inventore tempore maiores, laboriosam quia sit.</span>
-                            </p>
+                            <div className=' text-white text-[18px] font-[400]'>
+                                <span className=''>This is a summer camp musical website.It's a full Stack website.This project is completed with MERN.Many technologies are used in this project and it has many features, some examples are given below.</span>
+
+                                <section className='my-10'>
+                                    <h3 className=' font-[500] mb-1' >Features:</h3>
+                                    <p>* Student can do musical courses from this website.</p>
+                                    <p>* instructors can post courses from here.</p>
+                                    <p>* Here are the benefits of online bankings.</p>
+                                    <p>* admin can manage musical classes.</p>
+                                    <p>* Admin can manage users.</p>
+                                </section>
+
+                                <section className='my-10'>
+                                    <h3 className='font-[500] mb-1'> Packages/ Technology:</h3>
+                                    <p>* React Router</p>
+                                    <p>* Tailwind</p>
+                                    <p>* DaisyUi</p>
+                                    <p>* Node(express)</p>
+                                    <p>* Firebase</p>
+                                    <p>* MongoDb</p>
+                                    <p>* Axios</p>
+                                    <p>* TanStack Query</p>
+                                    <p>* React hook form</p>
+                                    <p>* JSON Web Token</p>
+                                    <p>* Framer Motion and much more.</p>
+                                </section>
+                            </div>
 
                         </div>
                     </section>
