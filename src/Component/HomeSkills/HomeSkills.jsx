@@ -10,8 +10,10 @@ import mongodb from '../../assets/homeSkills/pngaaa.com-9150434.png'
 import firebase from '../../assets/homeSkills/1175544_firebase_google_icon.png'
 
 const HomeSkills = () => {
+    const title = document.getElementById('title')
+    
     return (
-        <div className='w-[90%] mx-auto pt-[20px]'>
+        <div className={`w-[90%] mx-auto ${title.innerText==='Skills'? 'pt-[120px]':'pt-[20px]'}`}>
             <h3  className=' text-white text-[30px] text-[500] text-center my-[100px]  border-b-2 pb-2  border-blue-500 w-[27%] mx-auto    '>My Skills</h3>
 
 

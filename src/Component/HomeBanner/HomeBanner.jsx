@@ -21,7 +21,7 @@ const HomeBanner = () => {
         '>I'm Showmik Arifen  Tonmoy </h2>
 
         <div className='text-[25px] md:text-[40px] font-[500] font-mono	 
-       text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-500'>
+       text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-500 '>
           
           
         <TypeAnimation
