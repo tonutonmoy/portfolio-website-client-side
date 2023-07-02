@@ -43,11 +43,11 @@ const HomeContact = () => {
             });
     };
     return (
-        <div className={`  ${title.innerText==='Contact'? 'pt-[120px]':'py-10'}`}>
+        <div className={`  ${title.innerText==='Contact'? 'pt-[120px]':'py-10'} `}>
             <h3  className=' text-white text-[30px] text-[500] text-center my-[100px]  border-b-2 pb-2  border-blue-500 w-[27%] mx-auto    '>Contact Me</h3>
 
 
-            <div className=" w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 ">
+            <div className=" w-[80%] md:w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 ">
 
 
                 <section>

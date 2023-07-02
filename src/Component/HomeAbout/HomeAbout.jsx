@@ -17,7 +17,7 @@ const HomeAbout = () => {
 
 
   return (
-    <div className='w-[90%] mx-auto my-[120px]  py-[120px]'>
+    <div className='w-[80%] md:w-[90%] mx-auto my-[120px]  py-[120px]'>
 
 
 
@@ -31,7 +31,7 @@ const HomeAbout = () => {
 
         >
 
-          <div id='tonu' style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }} className='p-10  border-l-4 border-blue-500
+          <div  style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }} className='p-10  border-l-4 border-blue-500
                  rounded-[50%] relative home-about-img-section group  '>
             {/* <span style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }} className='text-white md:text-[50px] text-[30px] font-[500] absolute top-[45%] left-[15%]  ring-4  px-10  ml-[-1000px]  group-hover:ml-0  group-hover:inline  duration-[2s]	'>MERN STACK</span> */}
 

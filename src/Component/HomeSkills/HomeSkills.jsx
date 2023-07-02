@@ -13,7 +13,7 @@ const HomeSkills = () => {
     const title = document.getElementById('title')
     
     return (
-        <div className={`w-[90%] mx-auto ${title.innerText==='Skills'? 'pt-[120px]':'pt-[20px]'}`}>
+        <div className={`w-[80%] md:w-[90%] mx-auto ${title.innerText==='Skills'? 'pt-[120px]':'pt-[20px]'}`}>
             <h3  className=' text-white text-[30px] text-[500] text-center my-[100px]  border-b-2 pb-2  border-blue-500 w-[27%] mx-auto    '>My Skills</h3>
 
 
@@ -31,7 +31,7 @@ const HomeSkills = () => {
                      <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s]">
                      <img className='p-10 w-[300px] h-[200px]' src={html} alt="Shoes" />
                     <div className="card-body">
-                        <h2 className=" text-[23px] text-white font-[400] text-center">HTML 5</h2>
+                        <h2 className=" text-[18px] md:text-[23px] text-white font-[400] text-center">HTML 5</h2>
                       
                     </div>
                      </div>
@@ -51,7 +51,7 @@ const HomeSkills = () => {
                   <div style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                   <img className='p-10 w-[300px] h-[200px]' src={css} alt="Shoes" />
                     <div className="card-body">
-                        <h2 className=" text-[23px] text-white font-[400] text-center">CSS 3</h2>
+                        <h2 className=" text-[18px] md:text-[23px] text-white font-[400] text-center">CSS 3</h2>
                       
                     </div>
                   </div>
@@ -70,7 +70,7 @@ const HomeSkills = () => {
                    <div style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                    <img className='p-10 w-[300px] h-[200px]' src={bootstrap} alt="Shoes" />
                     <div className="card-body">
-                        <h2 className=" text-[23px] text-white font-[400] text-center">Bootstrap</h2>
+                        <h2 className=" text-[18px] md:text-[23px] text-white font-[400] text-center">Bootstrap</h2>
                       
                     </div>
                    </div>
@@ -90,7 +90,7 @@ const HomeSkills = () => {
                   <div  style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                   <img className='p-10 w-[300px] h-[200px]' src={tailwind} alt="Shoes" />
                     <div className="card-body">
-                        <h2 className=" text-[23px] text-white font-[400] text-center">Tailwind</h2>
+                        <h2 className=" text-[18px] md:text-[23px] text-white font-[400] text-center">Tailwind</h2>
                       
                     </div>
                   </div>
@@ -111,7 +111,7 @@ const HomeSkills = () => {
                   <div  style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                   <img className='p-10 w-[300px] h-[200px]' src={javascript} alt="Shoes" />
                     <div className="card-body">
-                        <h2 className=" text-[23px] text-white font-[400] text-center">Javascript</h2>
+                        <h2 className=" text-[18px] md:text-[23px] text-white font-[400] text-center">Javascript</h2>
                       
                     </div>
                   </div>
@@ -129,7 +129,7 @@ const HomeSkills = () => {
                     <div style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                     <img className='p-10 w-[300px] h-[200px]' src={react} alt="Shoes" />
                     <div className="card-body">
-                        <h2 className=" text-[23px] text-white font-[400] text-center">React</h2>
+                        <h2 className=" text-[18px] md:text-[23px] text-white font-[400] text-center">React</h2>
                       
                     </div>
                     </div>
@@ -147,7 +147,7 @@ const HomeSkills = () => {
                   <div   style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                   <img className='p-10 w-[300px] h-[200px]' src={node} alt="Shoes" />
                     <div className="card-body">
-                        <h2 className=" text-[23px] text-white font-[400] text-center">Node</h2>
+                        <h2 className=" text-[18px] md:text-[23px] text-white font-[400] text-center">Node</h2>
                       
                     </div>
                   </div>
@@ -166,7 +166,7 @@ const HomeSkills = () => {
                    <div  style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                    <img className='p-10 w-[300px] h-[200px]' src={express} alt="Shoes" />
                     <div className="card-body">
-                        <h2 className=" text-[23px] text-white font-[400] text-center">Express</h2>
+                        <h2 className=" text-[18px] md:text-[23px] text-white font-[400] text-center">Express</h2>
                       
                     </div>
                    </div>
@@ -185,7 +185,7 @@ const HomeSkills = () => {
                    <div style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s] ">
                    <img className='p-10 w-[300px] h-[200px]' src={mongodb} alt="Shoes" />
                     <div className="card-body">
-                        <h2 className=" text-[23px] text-white font-[400] text-center">MongoDB</h2>
+                        <h2 className=" text-[18px] md:text-[23px] text-white font-[400] text-center">MongoDB</h2>
                       
                     </div>
                    </div>
@@ -202,7 +202,7 @@ const HomeSkills = () => {
                    <div  style={{boxShadow:'5px 5px 10px black'}} className="card w-full btn-outline  hover:scale-110 duration-[1s]">
                    <img className='p-10 w-[300px] h-[200px]' src={firebase} alt="Shoes" />
                     <div className="card-body">
-                        <h2 className=" text-[23px] text-white font-[400] text-center">Firebase</h2>
+                        <h2 className=" text-[18px] md:text-[23px] text-white font-[400] text-center">Firebase</h2>
                       
                     </div>
                    </div>
