@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import Swal from 'sweetalert2'
 
+import img from '../../../assets/homeContact/giphy.gif'
+
 const HomeContact = () => {
 
     const title = document.getElementById('title')
@@ -50,9 +52,14 @@ const HomeContact = () => {
             <div className=" w-[80%] md:w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 ">
 
 
-                <section>
+              <section className=' flex items-center mb-[70px] md:mb-0'>
 
-                </section>
+              <div style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }} className='p-10  border-l-4 border-blue-500
+                 rounded-[50%] relative home-about-img-section '>
+              <img  className=' md:h-[700px] h-[500px]  w-full  hover:scale-105 duration-[1s]  border-l-[10px] border-blue-500 rounded-[30px]  group-hover:border-blue-500/10    ' style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }}  src={img} alt="" />
+                </div>
+
+              </section>
 
                 <form ref={form} onSubmit={sendEmail}
                     style={{ boxShadow: '5px 5px 30px rgb(59 130 246)' }} className="card-body border-r-8 border-l-8 border-blue-500  w-full   duration-[1s]  " >
