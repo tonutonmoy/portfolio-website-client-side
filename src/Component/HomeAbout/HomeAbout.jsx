@@ -1,11 +1,32 @@
 import { Link } from 'react-router-dom';
 import img1 from '../../assets/homeAbout/DSC06733.jpg'
-import img2 from '../../assets/homeAbout/DSC06736.jpg'
-import img3 from '../../assets/homeAbout/DSC06738.jpg'
-import img4 from '../../assets/homeAbout/DSC06742.jpg'
-import img5 from '../../assets/homeAbout/DSC06750.jpg'
-import img6 from '../../assets/homeAbout/DSC06751.jpg'
-import img7 from '../../assets/homeAbout/DSC06752.jpg'
+import img2 from '../../assets/homeAbout/DSC06794.jpg'
+import img3 from '../../assets/homeAbout/DSC06795.jpg'
+import img4 from '../../assets/homeAbout/DSC06804.jpg'
+import img5 from '../../assets/homeAbout/DSC06817.jpg'
+import img6 from '../../assets/homeAbout/DSC06820.jpg'
+import img7 from '../../assets/homeAbout/DSC06833.jpg'
+import img8 from '../../assets/homeAbout/DSC06842.jpg'
+import img9 from '../../assets/homeAbout/DSC06854.jpg'
+import img10 from '../../assets/homeAbout/DSC06883.jpg'
+import img11 from '../../assets/homeAbout/DSC06887.jpg'
+import img12 from '../../assets/homeAbout/DSC06888.jpg'
+import img13 from '../../assets/homeAbout/DSC06889.jpg'
+import img14 from '../../assets/homeAbout/DSC06890.jpg'
+import img15 from '../../assets/homeAbout/DSC06892.jpg'
+import img16 from '../../assets/homeAbout/DSC06893.jpg'
+import img17 from '../../assets/homeAbout/DSC06901.jpg'
+import img18 from '../../assets/homeAbout/DSC06904.jpg'
+import img19 from '../../assets/homeAbout/DSC06905.jpg'
+import img20 from '../../assets/homeAbout/DSC06908.jpg'
+import img21 from '../../assets/homeAbout/DSC06911.jpg'
+import img22 from '../../assets/homeAbout/DSC06913.jpg'
+import img23 from '../../assets/homeAbout/DSC06914.jpg'
+import img24 from '../../assets/homeAbout/DSC06915.jpg'
+import img25 from '../../assets/homeAbout/DSC06918.jpg'
+import img26 from '../../assets/homeAbout/DSC06920.jpg'
+
+
 
 
 
@@ -36,13 +57,13 @@ const HomeAbout = () => {
             {/* <span style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }} className='text-white md:text-[50px] text-[30px] font-[500] absolute top-[45%] left-[15%]  ring-4  px-10  ml-[-1000px]  group-hover:ml-0  group-hover:inline  duration-[2s]	'>MERN STACK</span> */}
 
 
-            <img className=' md:h-[700px] h-[500px] absolute top-[5%] left-[1%]   ml-[-1000px] rounded-[50%] group-hover:ml-0   w-full  hover:scale-105 duration-[2s]  border-l-[10px] border-blue-500  group-hover:border-blue-500/10    ' src={img1} alt=""
+            <img className=' md:h-[700px] h-[500px] absolute top-[5%] left-[1%]   ml-[-1000px] rounded-[50%] group-hover:ml-0   w-full  hover:scale-105 duration-[2s]  border-l-[10px] border-blue-500  group-hover:border-blue-500/10    ' src={img12} alt=""
               style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }} />
 
 
 
 
-            <img className=' md:h-[700px] h-[500px]  w-full  hover:scale-105 duration-[2s]  border-l-[10px] border-blue-500 rounded-[30px] group-hover:opacity-0 group-hover:border-blue-500/10    ' src={img2} alt=""
+            <img className=' md:h-[700px] h-[500px]  w-full  hover:scale-105 duration-[2s]  border-l-[10px] border-blue-500 rounded-[30px] group-hover:opacity-0 group-hover:border-blue-500/10    ' src={img8} alt=""
               style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }} />
 
           </div>
