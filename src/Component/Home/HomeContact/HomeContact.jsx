@@ -114,8 +114,10 @@ const HomeContact = () => {
                         data-aos-easing="linear"
                         data-aos-duration="1000">
 
-                        <input type='submit' value='Submit' className="md:py-3 py-1 my-10 rounded-md border-0 btn-outline md:text-[20px] text-[17px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 "
-                        />
+                        <button  className="md:py-3 py-1 my-10 rounded-md border-0 btn-outline md:text-[20px] text-[17px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 "
+                        >
+                            Submit
+                        </button>
                     </div>
 
                 </form>
