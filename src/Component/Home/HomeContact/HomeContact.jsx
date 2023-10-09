@@ -49,20 +49,22 @@ const HomeContact = () => {
             <h3  className=' text-white text-[30px] text-[500] text-center my-[100px]  border-b-2 pb-2  border-blue-500 w-[27%] mx-auto    '>Contact Me</h3>
 
 
-            <div className=" w-[80%] md:w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 ">
+            <div className=" w-[80%] md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%] mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-20 md:gap-20 lg:gap-20 xl:gap-20 2xl:gap-0 ">
 
 
               <section className=' flex items-center mb-[70px] md:mb-0'>
 
               <div style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }} className='p-10  border-l-4 border-blue-500
-                 rounded-[50%] relative home-about-img-section '>
-              <img  className=' md:h-[700px] h-[500px]  w-full  hover:scale-105 duration-[1s]  border-l-[10px] border-blue-500 rounded-[30px]  group-hover:border-blue-500/10    ' style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }}  src={img} alt="" />
+                 rounded-[50%] relative home-about-img-section 
+                 w-[100%] md:w-[70%]  lg:w-[100%]   xl:w-[90%] 2xl:w-[70%] mx-auto'>
+              <img  className=' h-[500px] md:h-[600px] lg:h-[650px] xl:h-[700px] 2xl:h-[700px]  w-full  hover:scale-105 duration-[1s]  border-l-[10px] border-blue-500 rounded-[30px]  group-hover:border-blue-500/10    ' style={{ boxShadow: '5px 5px 20px rgb(59 130 246)' }}  src={img} alt="" />
                 </div>
 
               </section>
 
                 <form ref={form} onSubmit={sendEmail}
-                    style={{ boxShadow: '5px 5px 30px rgb(59 130 246)' }} className="card-body border-r-8 border-l-8 border-blue-500  w-full   duration-[1s]  " >
+                    style={{ boxShadow: '5px 5px 30px rgb(59 130 246)' }} className="card-body border-r-8 border-l-8 border-blue-500   duration-[1s]  
+                    w-[100%] md:w-[70%]  lg:w-[100%]   xl:w-[90%] 2xl:w-[70%] mx-auto " >
 
                     <div
                         className="form-control md:my-5 ">

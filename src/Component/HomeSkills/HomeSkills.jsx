@@ -13,11 +13,11 @@ const HomeSkills = () => {
     const title = document.getElementById('title')
     
     return (
-        <div className={`w-[80%] md:w-[90%] mx-auto ${title.innerText==='Skills'? 'pt-[120px]':'pt-[20px]'}`}>
+        <div className={`w-[60%] md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%] mx-auto ${title.innerText==='Skills'? 'pt-[120px]':'pt-[20px]'}`}>
             <h3  className=' text-white text-[30px] text-[500] text-center my-[100px]  border-b-2 pb-2  border-blue-500 w-[27%] mx-auto    '>My Skills</h3>
 
 
-            <section className=" grid grid-cols-2 md:grid-cols-5 gap-10">
+            <section className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5 gap-10 md:gap-10 lg:gap-10 xl:gap-10  2xl:gap-20">
 
 
 

@@ -1,14 +1,14 @@
-import homeBanner from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 212630.png'
-import homePhoto from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 212704.png'
-import homeTab from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 212736.png'
-import homePartners from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 212806.png'
-import homeServices from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 212833.png'
-import allToys from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 212937.png'
-import addAToy from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 213018.png'
-import myToy from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 213041.png'
-import update from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 213107.png'
-import viewToy from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 213141.png'
-import footer from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 212906.png'
+import homeBanner from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 212630-min.png'
+import homePhoto from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 212704-min.png'
+import homeTab from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 212736-min.png'
+import homePartners from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 212806-min.png'
+import homeServices from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 212833-min.png'
+import allToys from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 212937-min.png'
+import addAToy from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 213018-min.png'
+import myToy from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 213041-min.png'
+import update from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 213107-min.png'
+import viewToy from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 213141-min.png'
+import footer from '../../assets/toyFairScreenShort/Screenshot 2023-06-27 212906-min.png'
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -49,37 +49,37 @@ const HomeToyFair = () => {
                         className="mySwiper  rounded-t-[10px] "
                     >
                         <SwiperSlide>
-                            <img className='h-[250px]' src={homeBanner} alt="" />
+                            <img className='h-[250px] w-full' src={homeBanner} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='h-[250px]' src={homePhoto} alt="" />
+                            <img className='h-[250px] w-full' src={homePhoto} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='h-[250px]' src={homeTab} alt="" />
+                            <img className='h-[250px] w-full' src={homeTab} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='h-[250px]' src={homePartners} alt="" />
+                            <img className='h-[250px] w-full' src={homePartners} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='h-[250px]' src={homeServices} alt="" />
+                            <img className='h-[250px] w-full' src={homeServices} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='h-[250px]' src={allToys} alt="" />
+                            <img className='h-[250px] w-full' src={allToys} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='h-[250px]' src={addAToy} alt="" />
+                            <img className='h-[250px] w-full' src={addAToy} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='h-[250px]' src={myToy} alt="" />
+                            <img className='h-[250px] w-full' src={myToy} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='h-[250px]' src={update} alt="" />
+                            <img className='h-[250px] w-full' src={update} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='h-[250px]' src={viewToy} alt="" />
+                            <img className='h-[250px] w-full' src={viewToy} alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='h-[250px]' src={footer} alt="" />
+                            <img className='h-[250px] w-full' src={footer} alt="" />
                         </SwiperSlide>
 
 

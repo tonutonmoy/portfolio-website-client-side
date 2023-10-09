@@ -1,19 +1,19 @@
 
-import home from '../../assets/holichildScreenhort/Screenshot 2023-06-27 155535.png'
-import home1 from '../../assets/holichildScreenhort/Screenshot 2023-06-27 165301.png'
-import home2 from '../../assets/holichildScreenhort/Screenshot 2023-06-27 165346.png'
-import home3 from '../../assets/holichildScreenhort/Screenshot 2023-06-27 155917.png'
-import login from '../../assets/holichildScreenhort/Screenshot 2023-06-27 155832.png'
-import allClasses from '../../assets/holichildScreenhort/Screenshot 2023-06-27 155748.png'
-import selectedClasses from '../../assets/holichildScreenhort/Screenshot 2023-06-27 160809.png'
-import payment from '../../assets/holichildScreenhort/Screenshot 2023-06-27 161052.png'
-import paymentHistory from '../../assets/holichildScreenhort/Screenshot 2023-06-27 160915.png'
-import enrolledClasses from '../../assets/holichildScreenhort/Screenshot 2023-06-27 160846.png'
-import addAClasses from '../../assets/holichildScreenhort/Screenshot 2023-06-27 160212.png'
-import myClasses from '../../assets/holichildScreenhort/Screenshot 2023-06-27 160138.png'
-import manageClasses from '../../assets/holichildScreenhort/Screenshot 2023-06-27 160448.png'
-import manageUsers from '../../assets/holichildScreenhort/Screenshot 2023-06-27 160526.png'
-import footer from '../../assets/holichildScreenhort/Screenshot 2023-06-27 161201.png'
+import home from '../../assets/holichildScreenhort/Screenshot 2023-06-27 155535-min.png'
+import home1 from '../../assets/holichildScreenhort/Screenshot 2023-06-27 165301-min.png'
+import home2 from '../../assets/holichildScreenhort/Screenshot 2023-06-27 165346-min.png'
+import home3 from '../../assets/holichildScreenhort/Screenshot 2023-06-27 155917-min.png'
+import login from '../../assets/holichildScreenhort/Screenshot 2023-06-27 155832-min.png'
+import allClasses from '../../assets/holichildScreenhort/Screenshot 2023-06-27 155748-min.png'
+import selectedClasses from '../../assets/holichildScreenhort/Screenshot 2023-06-27 160809-min.png'
+import payment from '../../assets/holichildScreenhort/Screenshot 2023-06-27 161052-min.png'
+import paymentHistory from '../../assets/holichildScreenhort/Screenshot 2023-06-27 160915-min.png'
+import enrolledClasses from '../../assets/holichildScreenhort/Screenshot 2023-06-27 160846-min.png'
+import addAClasses from '../../assets/holichildScreenhort/Screenshot 2023-06-27 160212-min.png'
+import myClasses from '../../assets/holichildScreenhort/Screenshot 2023-06-27 160138-min.png'
+import manageClasses from '../../assets/holichildScreenhort/Screenshot 2023-06-27 160448-min.png'
+import manageUsers from '../../assets/holichildScreenhort/Screenshot 2023-06-27 160526-min.png'
+import footer from '../../assets/holichildScreenhort/Screenshot 2023-06-27 161201-min.png'
 
 
 
@@ -57,49 +57,49 @@ const HomeHolyChild = () => {
                             className="mySwiper  rounded-t-[10px] "
                         >
                             <SwiperSlide>
-                                <img className='h-[250px]' src={home} alt="" />
+                                <img className='h-[250px] w-full' src={home} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={home1} alt="" />
+                                <img className='h-[250px] w-full' src={home1} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={home2} alt="" />
+                                <img className='h-[250px] w-full' src={home2} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={home3} alt="" />
+                                <img className='h-[250px] w-full' src={home3} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={login} alt="" />
+                                <img className='h-[250px] w-full' src={login} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={allClasses} alt="" />
+                                <img className='h-[250px] w-full' src={allClasses} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={selectedClasses} alt="" />
+                                <img className='h-[250px] w-full' src={selectedClasses} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={payment} alt="" />
+                                <img className='h-[250px] w-full' src={payment} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
                                 <img className='h-[250px]' src={paymentHistory} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={enrolledClasses} alt="" />
+                                <img className='h-[250px] w-full' src={enrolledClasses} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={addAClasses} alt="" />
+                                <img className='h-[250px] w-full'  src={addAClasses} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={myClasses} alt="" />
+                                <img className='h-[250px] w-full' src={myClasses} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={manageClasses} alt="" />
+                                <img className='h-[250px] w-full' src={manageClasses} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={manageUsers} alt="" />
+                                <img className='h-[250px] w-full' src={manageUsers} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={footer} alt="" />
+                                <img className='h-[250px] w-full' src={footer} alt="" />
                             </SwiperSlide>
 
 

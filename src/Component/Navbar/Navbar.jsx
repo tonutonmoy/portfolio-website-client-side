@@ -7,32 +7,32 @@ const Navbar = () => {
 
     const navLink=< >
        <ActiveLink to='/'>
-       <li className=" active-link text-[20px]  mt-5  text-center font-[400] text-white">Home</li>
+       <li className=" active-link text-[17px] md:text-[17px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px]  mt-5  text-center font-[400] text-white">Home</li>
        </ActiveLink>
 
     
     <ActiveLink to='/skills'>
-       <li className=" active-link text-[20px] mt-5  text-center font-[400] text-white">Skills</li>
+       <li className=" active-link text-[17px] md:text-[17px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] mt-5  text-center font-[400] text-white">Skills</li>
        </ActiveLink>
     
   
 
        <ActiveLink to='/projects'>
-       <li className=" active-link text-[20px] mt-5  text-center font-[400] text-white">Projects</li>
+       <li className=" active-link text-[17px] md:text-[17px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] mt-5  text-center font-[400] text-white">Projects</li>
        </ActiveLink>
 
        <ActiveLink to='/resume'>
-       <li className=" active-link text-[20px] mt-5  text-center font-[400] text-white">Resume</li>
+       <li className=" active-link text-[17px] md:text-[17px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] mt-5  text-center font-[400] text-white">Resume</li>
        </ActiveLink>
 
        <ActiveLink to='/about'>
-       <li className=" active-link text-[20px] mt-5  text-center font-[400] text-white">About</li>
+       <li className=" active-link text-[17px] md:text-[17px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] mt-5  text-center font-[400] text-white">About</li>
        </ActiveLink>
          
        
 
       <ActiveLink to='/contact'>
-      <li className=" active-link text-[20px] my-5  text-center font-[400] text-white">Contact</li>
+      <li className=" active-link text-[17px] md:text-[17px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] my-5  text-center font-[400] text-white">Contact</li>
       </ActiveLink>
 
 

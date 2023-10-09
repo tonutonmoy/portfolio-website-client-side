@@ -1,10 +1,10 @@
-import homeBanner from '../../assets/tastyRecipesScreenShort/Screenshot 2023-06-27 234833.png'
-import homeChef from '../../assets/tastyRecipesScreenShort/Screenshot 2023-06-27 234859.png'
-import homeFoodSafety from '../../assets/tastyRecipesScreenShort/Screenshot 2023-06-27 234921.png'
-import homeReview from '../../assets/tastyRecipesScreenShort/Screenshot 2023-06-27 235020.png'
-import singleChef from '../../assets/tastyRecipesScreenShort/Screenshot 2023-06-27 235102.png'
-import allRecipes from '../../assets/tastyRecipesScreenShort/Screenshot 2023-06-27 235133.png'
-import footer from '../../assets/tastyRecipesScreenShort/Screenshot 2023-06-27 235221.png'
+import homeBanner from '../../assets/tastyRecipesScreenShort/Screenshot 2023-06-27 234833-min.png'
+import homeChef from '../../assets/tastyRecipesScreenShort/Screenshot 2023-06-27 234859-min.png'
+import homeFoodSafety from '../../assets/tastyRecipesScreenShort/Screenshot 2023-06-27 234921-min.png'
+import homeReview from '../../assets/tastyRecipesScreenShort/Screenshot 2023-06-27 235020-min.png'
+import singleChef from '../../assets/tastyRecipesScreenShort/Screenshot 2023-06-27 235102-min.png'
+import allRecipes from '../../assets/tastyRecipesScreenShort/Screenshot 2023-06-27 235133-min.png'
+import footer from '../../assets/tastyRecipesScreenShort/Screenshot 2023-06-27 235221-min.png'
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -46,25 +46,25 @@ const HomeTastyRecipes = () => {
                             className="mySwiper  rounded-t-[10px] "
                         >
                             <SwiperSlide>
-                                <img className='h-[250px]' src={homeBanner} alt="" />
+                                <img className='h-[250px] w-full' src={homeBanner} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={homeChef} alt="" />
+                                <img className='h-[250px] w-full' src={homeChef} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={homeFoodSafety} alt="" />
+                                <img className='h-[250px] w-full' src={homeFoodSafety} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={homeReview} alt="" />
+                                <img className='h-[250px] w-full' src={homeReview} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={singleChef} alt="" />
+                                <img className='h-[250px] w-full' src={singleChef} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={allRecipes} alt="" />
+                                <img className='h-[250px] w-full' src={allRecipes} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img className='h-[250px]' src={footer} alt="" />
+                                <img className='h-[250px] w-full' src={footer} alt="" />
                             </SwiperSlide>
 
 
