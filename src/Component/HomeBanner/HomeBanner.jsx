@@ -52,7 +52,7 @@ const HomeBanner = () => {
             target="__blank" className=' text-white p-2 md:p-2 lg:p-3  xl:p-3r 2xl:p-3 rounded-md t  ring-blue-500 ring-2   
             text-[12px] md:text-[14px] lg:text-[15px] xl:text-[17px] 2xl:text-[18px] font-[400] '>Download Resume</a>
         </div>
-
+ 
       </div>
 
 
