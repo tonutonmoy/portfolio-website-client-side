@@ -18,7 +18,7 @@ w-[50%] mx-auto  justify-center'>
   <GrInstagram className='text-[30px] text-blue-500 '/>
   </a>
 
-  <a href="">
+  <a href="https://www.linkedin.com/in/showmic-arefin-tonmoy-560503280/">
   <BsLinkedin className='text-[30px] text-blue-500 '/>
   </a>
 </div>
