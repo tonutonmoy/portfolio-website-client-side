@@ -127,7 +127,7 @@ const HomeHolyChild = () => {
 
 
                             <button className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2 "
-                                onClick={() => window.my_modal_1.showModal()}>See details</button>
+                                onClick={() => window.my_modal_4.showModal()}>See details</button>
 
 
                         </div>
@@ -138,7 +138,7 @@ const HomeHolyChild = () => {
 
 
             {/* modal */}
-            <dialog id="my_modal_1" className="modal ">
+            <dialog id="my_modal_4" className="modal ">
                 <form method="dialog" className="modal-box w-11/12 max-w-5xl bg-black">
                     <section style={{ boxShadow: '5px 5px 10px black' }} className="card w-full  
                ">
