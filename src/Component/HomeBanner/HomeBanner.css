@@ -1,19 +1,13 @@
-.home-banner-container{
+.home-banner-container {
+  background-image: url(../../assets//homeBanner/DSC06736-min.jpg);
+  background-repeat: no-repeat;
 
-    background-image: url(../../assets//homeBanner/DSC06736-min.jpg);
-    background-repeat: no-repeat;
-
-    background-size: cover;
-    box-shadow: 30px 30px 30px black;
-
-   
-    
+  background-size: cover;
+  box-shadow: 30px 30px 30px black;
 }
-.home-banner-shadow{
+.home-banner-shadow {
+  background-color: black;
+  opacity: 0.3;
 
-    
-    background-color: black;
-    opacity: 0.3;
-
-    width: 100%;
+  width: 100%;
 }
