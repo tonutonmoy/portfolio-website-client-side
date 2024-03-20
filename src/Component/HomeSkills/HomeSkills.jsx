@@ -11,6 +11,7 @@ import firebase from "../../assets/homeSkills/1175544_firebase_google_icon.png";
 import typescript from "../../assets/homeSkills/typescript-svgrepo-com.png";
 import mongoose from "../../assets/homeSkills/mongoose-removebg-preview.png";
 import redux from "../../assets/homeSkills/redux-logo-svgrepo-com.png";
+import postgreSQL from "../../assets/homeSkills/postgreSQL.png";
 
 const HomeSkills = () => {
   const title = document.getElementById("title");
@@ -287,6 +288,28 @@ const HomeSkills = () => {
             <div className="card-body">
               <h2 className=" text-[18px] md:text-[23px] text-white font-[400] text-center">
                 Redux
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <div
+            style={{ boxShadow: "5px 5px 10px black" }}
+            className="card w-full btn-outline  hover:scale-110 duration-[1s]"
+          >
+            <img
+              className="p-10 w-[300px] h-[200px]"
+              src={postgreSQL}
+              alt="Shoes"
+            />
+            <div className="card-body">
+              <h2 className=" text-[18px] md:text-[23px] text-white font-[400] text-center">
+                PostgreSQL
               </h2>
             </div>
           </div>
