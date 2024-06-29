@@ -4,6 +4,7 @@ import Footer from "./Component/Footer/Footer";
 import { useContext } from "react";
 import { AuthContext } from "./Component/Provider/AuthProvider";
 import Github from "./Component/Github/Github";
+import Messenger from "./Component/Messenger/Messenger";
 
 function App() {
   const { mode } = useContext(AuthContext);
@@ -25,6 +26,7 @@ ${mode === "Dark" && "bg-black/95"}
     >
       <Navbar></Navbar>
       <Github />
+      <Messenger />
       <Outlet></Outlet>
       <Footer></Footer>
     </div>

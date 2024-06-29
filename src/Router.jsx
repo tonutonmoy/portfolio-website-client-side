@@ -6,40 +6,141 @@ import About from "./Component/About/About";
 import Resume from "./Component/Resume/Resume";
 import Contact from "./Component/Contact/Contact";
 import Skills from "./Component/Skills/Skills";
+import Login from "./Component/Login/Login";
+import Dashboard from "./Component/Dashboard/Dashboard";
+import CreateSkills from "./Component/Dashboard/CreateSkills/CreateSkills";
+import DashboardLayout from "./Component/Dashboard/DashboardLayout";
+import PrivateRoute from "./PrivateRoute";
+import CreateProject from "./Component/Dashboard/CreateProject/CreateProject";
+import ProjectDetails from "./Component/Projects/ProjectDetails/ProjectDetails";
+import MyProjects from "./Component/Dashboard/MyProjects/MyProjects";
+import EditProject from "./Component/Dashboard/EditProject/EditProject";
+import CreateBlog from "./Component/Dashboard/CreateBlog/CreateBlog";
+import EditBlog from "./Component/Dashboard/EditBlog/EditBlog";
+import Blog from "./Component/Blog/Blog";
+import BlogDetail from "./Component/Blog/BlogDetail/BlogDetail";
 
 const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <App></App>,
-      children:[
+  {
+    path: "/",
+    element: <App />,
+    children: [
       {
-        path:'/',
-        element:<Home></Home>
+        path: "/",
+        element: <Home />,
       },
       {
-        path:'/projects',
-        element:<Projects></Projects>
+        path: "/projects",
+        element: <Projects />,
       },
       {
-        path:'/about',
-        element:<About></About>
+        path: "/projectDetails/:id",
+        element: <ProjectDetails />,
       },
       {
-        path:'/resume',
-        element:<Resume></Resume>
+        path: "/about",
+        element: <About />,
       },
       {
-        path:'/contact',
-        element:<Contact></Contact>
+        path: "/resume",
+        element: <Resume />,
       },
       {
-        path:'/skills',
-        element:<Skills></Skills>
-      }
-    ]
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/skills",
+        element: <Skills />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/blogDetails/:id",
+        element: <BlogDetail />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+    ],
+  },
+  {
+    path: "/dashboard",
+    element: (
+      <PrivateRoute>
+        <DashboardLayout />
+      </PrivateRoute>
+    ),
+    children: [
+      {
+        path: "dashboard",
+        element: (
+          <PrivateRoute>
+            <Dashboard />{" "}
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "createSkills",
+        element: (
+          <PrivateRoute>
+            <CreateSkills />{" "}
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "createProject",
+        element: (
+          <PrivateRoute>
+            <CreateProject />{" "}
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "myProjects",
+        element: (
+          <PrivateRoute>
+            <MyProjects />{" "}
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "editProject/:id",
+        element: (
+          <PrivateRoute>
+            <EditProject />{" "}
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "createBlog",
+        element: (
+          <PrivateRoute>
+            <CreateBlog />{" "}
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "createBlog",
+        element: (
+          <PrivateRoute>
+            <CreateBlog />{" "}
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "editBlog/:id",
+        element: (
+          <PrivateRoute>
+            <EditBlog />{" "}
+          </PrivateRoute>
+        ),
+      },
+    ],
+  },
+]);
 
-    },
-  ]);
-
-
-  export default router;
+export default router;

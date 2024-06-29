@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import img1 from "../../assets/homeAbout/DSC06842-min.jpg";
-import img2 from "../../assets/homeAbout/DSC06888-min.jpg";
+import img1 from "../../../assets/homeAbout/DSC06842-min.jpg";
+import img2 from "../../../assets/homeAbout/DSC06888-min.jpg";
 
 const HomeAbout = () => {
   const title = document.getElementById("title");
