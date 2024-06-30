@@ -15,7 +15,7 @@ const ProjectDetails = () => {
     <div className="w-full min-h-screen  pt-40 pb-20 ">
       <div className="w-[90%] md:w-[90%]  lg:w-[80%]  xl:w-[70%]  2xl:w-[90%]  mx-auto text-gray-100 rounded-lg overflow-hidden">
         <img
-          className="w-full  h-80 object-cover"
+          className="w-full  h-80 lg:h-96 2xl:h-[500px] object-cover"
           src={data?.data?.project?.image}
         />
         <div className="p-6 mt-6">
