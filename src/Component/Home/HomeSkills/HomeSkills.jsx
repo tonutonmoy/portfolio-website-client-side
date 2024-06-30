@@ -11,7 +11,10 @@ import { FiEdit } from "react-icons/fi";
 
 const HomeSkills = ({ skillProps }) => {
   const title = document.getElementById("title");
-  const { data, isLoading, refetch } = useGetSkillsQuery("");
+  const { data, isLoading, refetch } = useGetSkillsQuery("", {
+    pollingInterval: 0,
+    refetchOnMountOrArgChange: true,
+  });
   const [deleteFunction] = useDeleteSkillsMutation();
 
   if (isLoading) {
@@ -37,9 +40,9 @@ const HomeSkills = ({ skillProps }) => {
 
   return (
     <div
-      className={`w-[60%] md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%] mx-auto ${
-        title.innerText === "Skills" ? "pt-[120px]" : "pt-[20px]"
-      }`}
+      className={`w-[60%] md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%] ${
+        skillProps === "mySkills" && "py-20 "
+      } mx-auto ${title.innerText === "Skills" ? "pt-[120px]" : "pt-[20px]"}`}
     >
       <h3 className=" text-white text-[30px] text-[500] text-center my-[100px]  border-b-2 pb-2  border-blue-500 w-[27%] mx-auto    ">
         My Skills

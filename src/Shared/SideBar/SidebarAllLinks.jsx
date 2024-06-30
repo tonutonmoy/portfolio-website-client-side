@@ -8,7 +8,7 @@ const SidebarAllLinks = () => {
 
   return (
     <div>
-      <ul className="menu md:p-4 w-52 md:w-80 lg:w-80 xl:w-80 2xl:w-80 min-h-full h-screen  bg-blue-400  lg:bg-blue-500/5  border-r">
+      <ul className="menu md:p-4 w-52 md:w-80 lg:w-80 xl:w-80 2xl:w-80 min-h-full h-screen  bg-[#2D394E]  lg:bg-blue-500/5  border-r">
         <aside className="py-4 w-full md:block ">
           <div className="sticky flex flex-col gap-2 md:p-4 text-sm  top-12 rounded-md">
             <Link

@@ -21,7 +21,7 @@ ${
   mode === "Green" && "bg-gradient-to-r from-gray-800 via-gray-800 to-green-800"
 }
 ${mode === "Dark" && "bg-black/95"}
-
+  overflow-hidden
 `}
     >
       <Navbar></Navbar>

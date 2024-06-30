@@ -10,7 +10,10 @@ import { MdDeleteForever } from "react-icons/md";
 import { FiEdit } from "react-icons/fi";
 
 const ProjectCard = ({ cardProps }) => {
-  const { data, isLoading, refetch } = useGetProjectsQuery("");
+  const { data, isLoading, refetch } = useGetProjectsQuery("", {
+    pollingInterval: 0,
+    refetchOnMountOrArgChange: true,
+  });
   const location = useLocation();
   const [deleteFunction] = useDeleteProjectMutation();
 

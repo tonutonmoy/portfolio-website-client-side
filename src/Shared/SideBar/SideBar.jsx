@@ -32,9 +32,7 @@ ${mode === "Dark" && "bg-black/95"}`}
           checked={isOpen}
           onChange={toggleSidebar}
         />
-        <div
-          className={`drawer-content  h-screen md:h-screen  lg:h-full  xl:h-full  2xl:h-full  `}
-        >
+        <div className={`drawer-content    `}>
           {" "}
           <Outlet />
           <label

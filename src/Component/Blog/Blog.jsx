@@ -20,7 +20,10 @@ const Blog = ({ blogProps }) => {
     }
   }, []);
 
-  const { data, isLoading, refetch } = useGetBlogsQuery("");
+  const { data, isLoading, refetch } = useGetBlogsQuery("", {
+    pollingInterval: 0,
+    refetchOnMountOrArgChange: true,
+  });
 
   if (isLoading) {
     return <Loading />;
@@ -44,7 +47,7 @@ const Blog = ({ blogProps }) => {
   };
 
   return (
-    <div className="w-[90%] mx-auto pt-16 pb-20">
+    <div className="w-[90%] mx-auto pt-40 pb-20">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-10">
         {data?.data?.blog?.map((a) => (
           <div
