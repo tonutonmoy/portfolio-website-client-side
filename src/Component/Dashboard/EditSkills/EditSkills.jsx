@@ -1,30 +1,23 @@
-import { toast } from "sonner";
-import { cloudINary } from "../../../Utils/cloudINary";
-import Loading from "../../../Shared/Loading/Loading";
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Loading from "../../../Shared/Loading/Loading";
+import { useState } from "react";
+import { cloudINary } from "../../../Utils/cloudINary";
+import { toast } from "sonner";
 import {
-  useGetSingleBlogQuery,
-  useUpdateBlogMutation,
-} from "../../../Redux/features/blog/blogApi";
-import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css"; // Import the Quill CSS for proper styling
+  useGetSingleSkillsQuery,
+  useUpdateSkillsMutation,
+} from "../../../Redux/features/skills/skills.Api";
 
-const EditBlog = () => {
+const EditSkills = () => {
   const { id } = useParams();
 
-  const { data, isLoading, refetch } = useGetSingleBlogQuery(id);
+  const { data, isLoading, refetch } = useGetSingleSkillsQuery(id);
 
   const [loading, serLoading] = useState(false);
 
   const [photos, setPhotos] = useState([]);
-  const [detail, setDetail] = useState("");
 
-  const [updateFunction] = useUpdateBlogMutation();
-
-  useEffect(() => {
-    setDetail(data?.data?.blog?.detail);
-  }, [data]);
+  const [updateFunction] = useUpdateSkillsMutation();
 
   if (isLoading) {
     return <Loading />;
@@ -46,16 +39,14 @@ const EditBlog = () => {
       }
     }
 
-    const title = e?.target?.title?.value;
+    const name = e?.target?.name?.value;
 
     const info = {
-      title,
-      image: image || data?.data?.project?.image,
-
-      detail,
+      name,
+      image: image || data?.data?.skills?.image,
     };
 
-    console.log(info, "info");
+    console.log(info, id, "info");
     const res = await updateFunction({ id, info });
 
     console.log(res?.error?.data?.message, res);
@@ -86,7 +77,7 @@ const EditBlog = () => {
   return (
     <div className=" w-full pb-60   ">
       <h2 className=" text-[30px] font-semibold text-gray-50 text-center my-10 ">
-        Edit Blog
+        Edit Skills
       </h2>
 
       <form
@@ -95,20 +86,20 @@ const EditBlog = () => {
       >
         <div className=" flex justify-center">
           <img
-            src={data?.data?.blog?.image}
+            src={data?.data?.skills?.image}
             className=" h-[250px] w-[500px]"
             alt=""
           />
         </div>
         <section className="grid md:grid-cols-2 md:gap-3 lg:gap-10 xl:gap-0 2xl:gap-0">
           <div className="text-center my-5">
-            <p className="text-[18px] font-[500]">Title</p>
+            <p className="text-[18px] font-[500]">Name</p>
             <input
-              defaultValue={data?.data?.blog?.title}
+              defaultValue={data?.data?.skills?.name}
               type="text"
-              placeholder="Title"
+              placeholder="name"
               className="input input-bordered input-md w-full max-w-xs my-3 text-gray-700"
-              name="title"
+              name="name"
               required
             />
           </div>
@@ -119,25 +110,6 @@ const EditBlog = () => {
               onChange={(e) => setPhotos(Array.from(e.target.files))}
               type="file"
               className="file-input w-full max-w-xs my-3"
-            />
-          </div>
-        </section>
-
-        <section>
-          <div className="text-center my-5">
-            <p className="text-[18px] font-[500]">Detail</p>
-            <ReactQuill
-              value={detail}
-              onChange={setDetail}
-              theme="snow"
-              placeholder="Enter your content"
-              style={{
-                height: "250px",
-                color: "black",
-                background: "white",
-                width: "90%",
-                margin: "auto",
-              }} // Set the height of the editor
             />
           </div>
         </section>
@@ -158,4 +130,4 @@ const EditBlog = () => {
   );
 };
 
-export default EditBlog;
+export default EditSkills;

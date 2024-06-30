@@ -1,10 +1,16 @@
+/* eslint-disable react/prop-types */
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import Swal from "sweetalert2";
 
 import img from "../../../assets/homeContact/giphy.gif";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa6";
+import { BsFacebook, BsLinkedin } from "react-icons/bs";
+import { GrInstagram } from "react-icons/gr";
 
-const HomeContact = () => {
+const HomeContact = ({ contactProps }) => {
   const title = document.getElementById("title");
 
   console.log(
@@ -54,21 +60,59 @@ const HomeContact = () => {
       </h3>
 
       <div className=" w-[80%] md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%] mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-20 md:gap-20 lg:gap-20 xl:gap-20 2xl:gap-0 ">
-        <section className=" flex items-center mb-[70px] md:mb-0">
-          <div
-            style={{ boxShadow: "5px 5px 20px rgb(59 130 246)" }}
-            className="p-10  border-l-4 border-blue-500
+        {contactProps === "contact" ? (
+          <section className=" text-gray-300 mt-40 md:flex justify-center ">
+            <div>
+              <h2 className=" text-2xl text-gray-100 my-5">
+                Connect with me on social media:
+              </h2>
+              <div className=" space-y-5">
+                <p>
+                  <MdEmail className=" inline text-[30px] text-blue-500" /> :
+                  <span className=" ms-2">www.tonutonmoy12@gmail.com</span>
+                </p>
+                <p>
+                  <FaPhone className=" inline text-[30px] text-blue-500" /> :
+                  <span className=" ms-2">+8801732159683 </span>
+                </p>
+                <p>
+                  <FaWhatsapp className=" inline text-[30px] text-blue-500" /> :
+                  <span className=" ms-2">+8801732159683 </span>
+                </p>
+              </div>
+
+              <div className=" flex gap-3 py-10  justify-center md:justify-start ">
+                <a href="https://www.facebook.com/tonu.tonmoy.3">
+                  <BsFacebook className="text-[30px] text-blue-500 " />
+                </a>
+
+                <a href="https://www.instagram.com/show_mik_arefin_tonmoy/">
+                  <GrInstagram className="text-[30px] text-blue-500 " />
+                </a>
+
+                <a href="https://www.linkedin.com/in/showmic-arefin-tonmoy-560503280/">
+                  <BsLinkedin className="text-[30px] text-blue-500 " />
+                </a>
+              </div>
+            </div>
+          </section>
+        ) : (
+          <section className=" flex items-center mb-[70px] md:mb-0">
+            <div
+              style={{ boxShadow: "5px 5px 20px rgb(59 130 246)" }}
+              className="p-10  border-l-4 border-blue-500
                  rounded-[50%] relative home-about-img-section 
                  w-[100%] md:w-[70%]  lg:w-[100%]   xl:w-[90%] 2xl:w-[70%] mx-auto"
-          >
-            <img
-              className=" h-[500px] md:h-[600px] lg:h-[650px] xl:h-[700px] 2xl:h-[700px]  w-full  hover:scale-105 duration-[1s]  border-l-[10px] border-blue-500 rounded-[30px]  group-hover:border-blue-500/10    "
-              style={{ boxShadow: "5px 5px 20px rgb(59 130 246)" }}
-              src={img}
-              alt=""
-            />
-          </div>
-        </section>
+            >
+              <img
+                className=" h-[500px] md:h-[600px] lg:h-[650px] xl:h-[700px] 2xl:h-[700px]  w-full  hover:scale-105 duration-[1s]  border-l-[10px] border-blue-500 rounded-[30px]  group-hover:border-blue-500/10    "
+                style={{ boxShadow: "5px 5px 20px rgb(59 130 246)" }}
+                src={img}
+                alt=""
+              />
+            </div>
+          </section>
+        )}
 
         <form
           ref={form}

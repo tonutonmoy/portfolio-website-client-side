@@ -19,6 +19,12 @@ import CreateBlog from "./Component/Dashboard/CreateBlog/CreateBlog";
 import EditBlog from "./Component/Dashboard/EditBlog/EditBlog";
 import Blog from "./Component/Blog/Blog";
 import BlogDetail from "./Component/Blog/BlogDetail/BlogDetail";
+import MyBlog from "./Component/Dashboard/MyBlog/Myblog";
+import MySkills from "./Component/Dashboard/MySkills/MySkills";
+import EditSkills from "./Component/Dashboard/EditSkills/EditSkills";
+import CreateExperience from "./Component/Dashboard/CreateExperience/CreateExperience";
+import MyExperience from "./Component/Dashboard/MyExperience/MyExperience";
+import EditExperience from "./Component/Dashboard/EditExperience/EditExperience";
 
 const router = createBrowserRouter([
   {
@@ -92,6 +98,22 @@ const router = createBrowserRouter([
         ),
       },
       {
+        path: "mySkills",
+        element: (
+          <PrivateRoute>
+            <MySkills />{" "}
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "editSkill/:id",
+        element: (
+          <PrivateRoute>
+            <EditSkills />{" "}
+          </PrivateRoute>
+        ),
+      },
+      {
         path: "createProject",
         element: (
           <PrivateRoute>
@@ -123,11 +145,12 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
+
       {
-        path: "createBlog",
+        path: "myBlogs",
         element: (
           <PrivateRoute>
-            <CreateBlog />{" "}
+            <MyBlog />{" "}
           </PrivateRoute>
         ),
       },
@@ -136,6 +159,31 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <EditBlog />{" "}
+          </PrivateRoute>
+        ),
+      },
+
+      {
+        path: "createExperience",
+        element: (
+          <PrivateRoute>
+            <CreateExperience />{" "}
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "myExperience",
+        element: (
+          <PrivateRoute>
+            <MyExperience />{" "}
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "editExperience/:id",
+        element: (
+          <PrivateRoute>
+            <EditExperience />{" "}
           </PrivateRoute>
         ),
       },

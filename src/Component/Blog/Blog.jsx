@@ -1,10 +1,18 @@
+/* eslint-disable react/prop-types */
 import { useEffect } from "react";
-import { useGetBlogsQuery } from "../../Redux/features/blog/blogApi";
+import {
+  useDeleteBlogMutation,
+  useGetBlogsQuery,
+} from "../../Redux/features/blog/blogApi";
 import Loading from "../../Shared/Loading/Loading";
 import { Link } from "react-router-dom";
 import "./Blog.css"; // Import the custom CSS file
+import { toast } from "sonner";
+import { MdDeleteForever } from "react-icons/md";
+import { FiEdit } from "react-icons/fi";
+const Blog = ({ blogProps }) => {
+  const [deleteFunction] = useDeleteBlogMutation();
 
-const Blog = () => {
   useEffect(() => {
     const title = document.getElementById("title");
     if (title) {
@@ -12,11 +20,28 @@ const Blog = () => {
     }
   }, []);
 
-  const { data, isLoading } = useGetBlogsQuery("");
+  const { data, isLoading, refetch } = useGetBlogsQuery("");
 
   if (isLoading) {
     return <Loading />;
   }
+
+  const deleteHandler = async (id) => {
+    const res = await deleteFunction(id);
+
+    if (res?.data?.success === true) {
+      toast.success(res.data.message);
+      refetch();
+    }
+    if (res?.data?.success === false) {
+      toast.success(res.data.message);
+    }
+    console.log(res);
+
+    if (res?.error?.data?.message === "Unauthorized Access") {
+      toast.error(res?.error?.data?.message);
+    }
+  };
 
   return (
     <div className="w-[90%] mx-auto pt-16 pb-20">
@@ -32,13 +57,30 @@ const Blog = () => {
                 src={a?.image}
                 alt={a?.title || "Blog Image"}
               />
-
-              <Link
-                to={`/blogDetails/${a?._id}`}
-                className="absolute bottom-0 right-0 bg-blue-500 text-white text-xs rounded-md px-4 py-2 m-2 hover:bg-blue-600 transition duration-300 ease-in-out"
-              >
-                Read more
-              </Link>
+              {blogProps === "myBlogs" ? (
+                <div>
+                  <Link
+                    to={`/dashboard/editBlog/${a?._id}`}
+                    className="absolute bottom-0 left-0 w-[100px] text-center font-medium bg-blue-500 text-white text-xs rounded-md px-4 py-2 m-2 hover:bg-blue-600 transition duration-300 ease-in-out"
+                  >
+                    <FiEdit className=" text-xl inline pb-1" />
+                  </Link>
+                  <button
+                    onClick={() => deleteHandler(a?._id)}
+                    className="absolute bottom-0 w-[100px] right-0 bg-red-500 font-medium text-white text-xs rounded-md px-4 py-2 m-2 hover:bg-red-600 transition duration-300 ease-in-out"
+                  >
+                    {" "}
+                    <MdDeleteForever className=" text-xl inline " />
+                  </button>
+                </div>
+              ) : (
+                <Link
+                  to={`/blogDetails/${a?._id}`}
+                  className="absolute bottom-0 right-0 bg-blue-500 text-white text-xs rounded-md px-4 py-2 m-2 hover:bg-blue-600 transition duration-300 ease-in-out"
+                >
+                  Read more
+                </Link>
+              )}
             </div>
 
             <div className="p-4">

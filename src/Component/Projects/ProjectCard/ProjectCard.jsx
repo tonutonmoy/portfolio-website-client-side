@@ -6,6 +6,8 @@ import {
 } from "../../../Redux/features/project/projectApi";
 import Loading from "../../../Shared/Loading/Loading";
 import { toast } from "sonner";
+import { MdDeleteForever } from "react-icons/md";
+import { FiEdit } from "react-icons/fi";
 
 const ProjectCard = ({ cardProps }) => {
   const { data, isLoading, refetch } = useGetProjectsQuery("");
@@ -16,11 +18,10 @@ const ProjectCard = ({ cardProps }) => {
     return <Loading />;
   }
 
-  console.log(data?.data?.projects, "project");
   let projectData = data?.data?.projects;
 
   if (location.pathname === "/") {
-    projectData = data?.data?.projects?.slice(0, 1);
+    projectData = data?.data?.projects?.slice(0, 6);
   }
 
   const deleteHandler = async (id) => {
@@ -65,18 +66,18 @@ const ProjectCard = ({ cardProps }) => {
 
               <div className=" ">
                 {cardProps === "myProjects" ? (
-                  <div className="flex gap-3  text-center">
+                  <div className="flex gap-3  text-center mt-5">
                     <Link
-                      className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105  hover:bg-blue-600     text-white bg-blue-500 "
+                      className="p-2 rounded-full border-0 btn-outline text-[15px] font-medium  w-full  hover:scale-105  hover:bg-blue-600     text-white bg-blue-500 "
                       to={`/dashboard/editProject/${a?._id}`}
                     >
-                      Edit
+                      <FiEdit className=" text-xl inline pb-1" /> Edit
                     </Link>
                     <button
                       onClick={() => deleteHandler(a?._id)}
-                      className="p-2 rounded-md border-0 btn-outline text-[15px] font-[400] w-full  hover:scale-105 hover:bg-red-600    text-white bg-red-500  "
-                      to={` /dashboard/editProject/${a?._id}`}
+                      className="p-2 rounded-full   font-medium border-0 btn-outline text-[15px]  w-full  hover:scale-105 hover:bg-red-600    text-white bg-red-500  "
                     >
+                      <MdDeleteForever className=" text-2xl inline pb-1" />{" "}
                       Delete
                     </button>
                   </div>

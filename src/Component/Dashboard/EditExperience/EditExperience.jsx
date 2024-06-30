@@ -1,58 +1,43 @@
 import { toast } from "sonner";
-import { cloudINary } from "../../../Utils/cloudINary";
 import Loading from "../../../Shared/Loading/Loading";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import {
-  useGetSingleBlogQuery,
-  useUpdateBlogMutation,
-} from "../../../Redux/features/blog/blogApi";
-import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css"; // Import the Quill CSS for proper styling
+  useGetSingleExperienceQuery,
+  useUpdateExperienceMutation,
+} from "../../../Redux/features/experience/experienceApi";
 
-const EditBlog = () => {
+const EditExperience = () => {
   const { id } = useParams();
 
-  const { data, isLoading, refetch } = useGetSingleBlogQuery(id);
+  const { data, isLoading, refetch } = useGetSingleExperienceQuery(id);
 
   const [loading, serLoading] = useState(false);
 
-  const [photos, setPhotos] = useState([]);
-  const [detail, setDetail] = useState("");
-
-  const [updateFunction] = useUpdateBlogMutation();
-
-  useEffect(() => {
-    setDetail(data?.data?.blog?.detail);
-  }, [data]);
+  const [updateFunction] = useUpdateExperienceMutation();
 
   if (isLoading) {
     return <Loading />;
   }
   console.log(data?.data?.blog);
-
   const handler = async (e) => {
     e.preventDefault();
-    let image;
+
     serLoading(true);
 
-    if (photos.length > 0) {
-      image = await cloudINary(photos[0]);
+    const experienceDetails = e?.target?.experienceDetails?.value;
 
-      if (image === null) {
-        console.log("null");
-        serLoading(false);
-        return toast.error("image not uploaded");
-      }
-    }
+    const companyName = e?.target?.companyName?.value;
 
-    const title = e?.target?.title?.value;
+    const jobType = e?.target?.jobType?.value;
+
+    const duration = e?.target?.duration?.value;
 
     const info = {
-      title,
-      image: image || data?.data?.project?.image,
-
-      detail,
+      experienceDetails,
+      companyName,
+      jobType,
+      duration,
     };
 
     console.log(info, "info");
@@ -86,58 +71,57 @@ const EditBlog = () => {
   return (
     <div className=" w-full pb-60   ">
       <h2 className=" text-[30px] font-semibold text-gray-50 text-center my-10 ">
-        Edit Blog
+        Edit Experience
       </h2>
 
       <form
         onSubmit={handler}
         className="w-[90%] md:w-[90%] lg:w-[95%] xl:w-[70%] 2xl:w-[50%] mx-auto mt-10 text-gray-50 bg-gradient-to-r from-blue-500/20 to-blue-400/20 shadow-lg border-[1px] px-4 md:px-2 lg:px-4 xl:px-0 2xl:px-0 py-10 rounded-lg"
       >
-        <div className=" flex justify-center">
-          <img
-            src={data?.data?.blog?.image}
-            className=" h-[250px] w-[500px]"
-            alt=""
-          />
-        </div>
-        <section className="grid md:grid-cols-2 md:gap-3 lg:gap-10 xl:gap-0 2xl:gap-0">
-          <div className="text-center my-5">
-            <p className="text-[18px] font-[500]">Title</p>
+        <section className=" grid md:grid-cols-2 md:gap-3  lg:gap-10 xl:gap-0 2xl:gap-0 ">
+          <div className=" text-center my-5">
+            <p className=" text-[18px] font-[500] "> Company name</p>
             <input
-              defaultValue={data?.data?.blog?.title}
+              defaultValue={data?.data?.experience?.companyName}
               type="text"
-              placeholder="Title"
-              className="input input-bordered input-md w-full max-w-xs my-3 text-gray-700"
-              name="title"
+              placeholder="company name"
+              className="input input-bordered input-md w-full max-w-xs my-3 text-gray-700 "
+              name="companyName"
               required
             />
           </div>
-
-          <div className="text-center my-5">
-            <p className="text-[18px] font-[500]">Image {photos.length}</p>
+          <div className=" text-center my-5">
+            <p className=" text-[18px] font-[500] "> JobType</p>
             <input
-              onChange={(e) => setPhotos(Array.from(e.target.files))}
-              type="file"
-              className="file-input w-full max-w-xs my-3"
+              defaultValue={data?.data?.experience?.jobType}
+              type="text"
+              placeholder="jobType"
+              className="input input-bordered input-md w-full max-w-xs my-3 text-gray-700 "
+              name="jobType"
+              required
+            />
+          </div>
+          <div className=" text-center my-5">
+            <p className=" text-[18px] font-[500] "> Duration</p>
+            <input
+              defaultValue={data?.data?.experience?.duration}
+              type="text"
+              placeholder="duration"
+              className="input input-bordered input-md w-full max-w-xs my-3 text-gray-700 "
+              name="duration"
+              required
             />
           </div>
         </section>
-
         <section>
-          <div className="text-center my-5">
-            <p className="text-[18px] font-[500]">Detail</p>
-            <ReactQuill
-              value={detail}
-              onChange={setDetail}
-              theme="snow"
+          <div className=" text-center my-5">
+            <p className=" text-[18px] font-[500] ">Experience Details</p>
+            <textarea
+              defaultValue={data?.data?.experience?.experienceDetails}
+              className="input input-bordered input-md w-[90%]  my-3 text-gray-700  h-[200px]"
               placeholder="Enter your content"
-              style={{
-                height: "250px",
-                color: "black",
-                background: "white",
-                width: "90%",
-                margin: "auto",
-              }} // Set the height of the editor
+              name="experienceDetails"
+              required
             />
           </div>
         </section>
@@ -158,4 +142,4 @@ const EditBlog = () => {
   );
 };
 
-export default EditBlog;
+export default EditExperience;

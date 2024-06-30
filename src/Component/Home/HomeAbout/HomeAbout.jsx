@@ -55,37 +55,32 @@ const HomeAbout = () => {
           >
             About Me
           </h3>
-          <p className=" text-white text-[17px] md:text-[18px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] font-[400]  hover:scale-110 duration-[2s]">
-            My name is Showmik arifen Tonmoy, and I am a junior web developer
-            with nearly 12 months of learning experience. I have acquired a
-            diverse skill set, including proficiency in React.js, HTML, CSS,
-            Bootstrap, Tailwind, JavaScript, Express.js,
-            Node.js,FireBase,MongoDB and many libraries also. I am also
-            knowledgeable about authentication using Google Firebase and
-            proficient in utilizing various development tools... <br />{" "}
-            {title.innerText === "Home" && (
-              <Link
-                to="/about"
-                className="p-2  rounded-md border-0 btn-outline text-[15px] font-[400]   hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2  "
-              >
-                See More
-              </Link>
-            )}
-            {title.innerText === "About" && (
-              <span>
-                I recently completed an intensive web development course at
-                Programming Hero, where I honed my skills in the MERN stack.
-                Equipped with a solid foundation in JavaScript, I thrive on
-                crafting interactive and responsive user interfaces.My
-                educational background, combined with hands-on experience in
-                building applications using MongoDB, Express.js, React, and
-                Node.js, enables me to develop robust and scalable solutions. I
-                am passionate about staying up-to-date with the latest industry
-                trends and continuously expanding my knowledge to deliver
-                cutting-edge projects.
-              </span>
-            )}
-          </p>
+          <div className=" text-white text-[17px] md:text-[18px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] font-[400]  hover:scale-110 duration-[2s]">
+            <p>
+              My name is Showmik arifen Tonmoy. I am a Full-Stack web developer
+              with nearly 2 years of learning experience. I have acquired a
+              diverse skill set, including proficiency in MERN Stack, PERN
+              Stack, and NEXT.js. I recently completed an intensive Full-Stack
+              web development course at Programming Hero, where I honed my
+              skills in both frontend and backend technologies. Equipped with a
+              solid foundation in JavaScript, I thrive on crafting interactive
+              and responsive user interfaces.... <br />{" "}
+              {title.innerText === "Home" && (
+                <Link
+                  to="/about"
+                  className="p-2  rounded-md border-0 btn-outline text-[15px] font-[400]   hover:scale-105    hover:bg-opacity-0 text-white ring-blue-500 ring-2  "
+                >
+                  See More
+                </Link>
+              )}
+              {title.innerText === "About" && (
+                <p className="mt-5">
+                  completed my SSC in 2012 and HSC in 2015 from the College of
+                  Business and Technical Education in Satkhira, Bangladesh.
+                </p>
+              )}
+            </p>
+          </div>
         </section>
       </div>
     </div>

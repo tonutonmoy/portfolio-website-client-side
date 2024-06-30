@@ -1,13 +1,39 @@
-import { useGetSkillsQuery } from "../../../Redux/features/skills/skills.Api";
+/* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
+import {
+  useDeleteSkillsMutation,
+  useGetSkillsQuery,
+} from "../../../Redux/features/skills/skills.Api";
 import Loading from "../../../Shared/Loading/Loading";
+import { toast } from "sonner";
+import { MdDeleteForever } from "react-icons/md";
+import { FiEdit } from "react-icons/fi";
 
-const HomeSkills = () => {
+const HomeSkills = ({ skillProps }) => {
   const title = document.getElementById("title");
-  const { data, isLoading } = useGetSkillsQuery("");
+  const { data, isLoading, refetch } = useGetSkillsQuery("");
+  const [deleteFunction] = useDeleteSkillsMutation();
 
   if (isLoading) {
     return <Loading />;
   }
+
+  const deleteHandler = async (id) => {
+    const res = await deleteFunction(id);
+
+    if (res?.data?.success === true) {
+      toast.success(res.data.message);
+      refetch();
+    }
+    if (res?.data?.success === false) {
+      toast.success(res.data.message);
+    }
+    console.log(res);
+
+    if (res?.error?.data?.message === "Unauthorized Access") {
+      toast.error(res?.error?.data?.message);
+    }
+  };
 
   return (
     <div
@@ -41,6 +67,25 @@ const HomeSkills = () => {
                   {a?.name}
                 </h2>
               </div>
+              {skillProps === "mySkills" ? (
+                <div className=" flex  mb-1 px-1">
+                  <Link
+                    to={`/dashboard/editSkill/${a?._id}`}
+                    className="bottom-0 w-full right-0 text-center font-medium bg-blue-500 text-white text-xs rounded-full px-4 py-2 m-2 hover:bg-blue-600 transition duration-300 ease-in-out"
+                  >
+                    <FiEdit className=" text-xl inline pb-1" />
+                  </Link>
+                  <button
+                    onClick={() => deleteHandler(a?._id)}
+                    className="bottom-0  w-full rounded-full left-0 bg-red-500 font-medium text-white text-xs px-4 py-2 m-2 hover:bg-red-600 transition duration-300 ease-in-out"
+                  >
+                    {" "}
+                    <MdDeleteForever className=" text-2xl inline pb-1" />
+                  </button>
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         ))}

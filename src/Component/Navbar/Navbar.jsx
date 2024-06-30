@@ -112,7 +112,7 @@ const Navbar = () => {
       )}
 
       {isLoggedIn() ? (
-        <div className=" flex items-center cursor-pointer px-6 py-2 h-[40px] rounded-2xl   bg-red-500/30 hover:bg-red-600 active-link text-[15px] md:text-[15px] lg:text-[17px] xl:text-[17px] 2xl:text-[17px]   mt-3 text-center font-[500] justify-center text-white">
+        <div className=" flex items-center cursor-pointer px-6 py-2 h-[40px] rounded-2xl   bg-red-600 hover:bg-red-700 active-link text-[15px] md:text-[15px] lg:text-[17px] xl:text-[17px] 2xl:text-[17px]   mt-3 text-center font-[500] justify-center text-white">
           <li onClick={handler} className="py-2   ">
             logout
           </li>
@@ -152,14 +152,14 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu navbar-ul menu-sm  dropdown-content mt-3 z-[1] p-2  shadow bg-black/50   rounded-box w-52"
+            className="menu navbar-ul menu-sm    dropdown-content mt-3 z-[1] p-2  shadow bg-black/50   rounded-box w-52"
           >
             {navLink}
           </ul>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex  justify-center">
-        <ul className="menu menu-horizontal px-1 navbar-ul  gap-10">
+        <ul className="menu menu-horizontal px-1 navbar-ul  lg:gap-8  xl:gap-10">
           {navLink}
         </ul>
       </div>

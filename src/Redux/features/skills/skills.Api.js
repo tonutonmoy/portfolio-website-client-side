@@ -15,7 +15,32 @@ const skillsApi = baseApi.injectEndpoints({
         method: "GET",
       }),
     }),
+    getSingleSkills: builder.query({
+      query: (id) => ({
+        url: `/skills/getSingleSkills/${id}`,
+        method: "GET",
+      }),
+    }),
+    updateSkills: builder.mutation({
+      query: (data) => ({
+        url: `/skills/updateSkills/${data?.id}`,
+        method: "PUT",
+        body: data?.info,
+      }),
+    }),
+    deleteSkills: builder.mutation({
+      query: (id) => ({
+        url: `/skills/deleteSkills/${id}`,
+        method: "DELETE",
+      }),
+    }),
   }),
 });
 
-export const { useGetSkillsQuery, useCreateSkillMutation } = skillsApi;
+export const {
+  useGetSkillsQuery,
+  useCreateSkillMutation,
+  useDeleteSkillsMutation,
+  useGetSingleSkillsQuery,
+  useUpdateSkillsMutation,
+} = skillsApi;
