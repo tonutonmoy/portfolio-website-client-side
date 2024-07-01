@@ -32,7 +32,7 @@ ${mode === "Dark" && "bg-black/95"}`}
           checked={isOpen}
           onChange={toggleSidebar}
         />
-        <div className={`drawer-content    `}>
+        <div className={`drawer-content   overflow-scroll `}>
           {" "}
           <Outlet />
           <label

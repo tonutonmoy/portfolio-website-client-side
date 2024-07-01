@@ -84,7 +84,7 @@ const EditBlog = () => {
   };
 
   return (
-    <div className=" w-full pb-60   ">
+    <div className=" w-full pb-60  ">
       <h2 className=" text-[30px] font-semibold text-gray-50 text-center my-10 ">
         Edit Blog
       </h2>
@@ -125,7 +125,7 @@ const EditBlog = () => {
 
         <section>
           <div className="text-center my-5">
-            <p className="text-[18px] font-[500]">Detail</p>
+            <p className="text-[18px] font-[500] mb-3">Detail</p>
             <ReactQuill
               value={detail}
               onChange={setDetail}
@@ -142,7 +142,7 @@ const EditBlog = () => {
           </div>
         </section>
 
-        <section className="text-center mt-20">
+        <section className="text-center mt-40 md:mt-32">
           {loading ? (
             <button className="w-full md:w-[30%] mx-auto flex justify-center bg-gradient-to-r from-blue-500 to-blue-400 hover:shadow-lg text-gray-100 rounded-full tracking-wide font-semibold shadow-lg cursor-pointer transition ease-in duration-500 py-2 px-5">
               <span className="loading loading-dots loading-md"></span>
