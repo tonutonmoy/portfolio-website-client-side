@@ -91,7 +91,7 @@ const EditBlog = () => {
 
       <form
         onSubmit={handler}
-        className="w-[90%] md:w-[90%] lg:w-[95%] xl:w-[70%] 2xl:w-[50%] mx-auto mt-10 text-gray-50 bg-gradient-to-r from-blue-500/20 to-blue-400/20 shadow-lg border-[1px] px-4 md:px-2 lg:px-4 xl:px-0 2xl:px-0 py-10 rounded-lg"
+        className="w-[90%] md:w-[90%] lg:w-[95%] xl:w-[70%] 2xl:w-[60%] 3xl:w-[50%] mx-auto mt-10 text-gray-50 bg-gradient-to-r from-blue-500/20 to-blue-400/20 shadow-lg border-[1px] px-4 md:px-2 lg:px-4 xl:px-0 2xl:px-0 py-10 rounded-lg"
       >
         <div className=" flex justify-center">
           <img

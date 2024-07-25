@@ -34,12 +34,12 @@ const BlogDetail = () => {
         <div className="px-4 mt-12 text-gray-100 w-full">
           {/* Render full HTML content */}
           <div
-            className="text-white blog-detail-text blog-detail-base leading-detail-relaxed mb-4 excerpt-detail-text xl:w-[900px]  2xl:w-[1200px] h-screen overflow-auto"
+            className="text-white blog-detail-text blog-detail-base leading-detail-relaxed mb-4 excerpt-detail-text xl:w-[900px] 2xl:w-[1000px]  3xl:w-[1200px] h-screen overflow-auto"
             dangerouslySetInnerHTML={{ __html: data?.data?.blog?.detail }}
           />
         </div>
 
-        <div className="w-full xl:w-1/4 m-auto mt-12 max-w-screen-sm shadow-xl bg-gray-100">
+        <div className="w-full xl:w-3/4 2xl:w-3/4 3xl:w-1/4 m-auto mt-12 max-w-screen-sm shadow-xl bg-gray-100">
           <div className="p-4 border-t border-b md:border md:rounded">
             <section className="flex py-2">
               <img

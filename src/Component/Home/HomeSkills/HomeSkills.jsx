@@ -48,7 +48,9 @@ const HomeSkills = ({ skillProps }) => {
         My Skills
       </h3>
 
-      <section className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5 gap-10 md:gap-10 lg:gap-10 xl:gap-10  2xl:gap-20">
+      <section className={` grid grid-cols-1 md:grid-cols-3   ${
+        skillProps === "mySkills" ? "lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 3xl:grid-cols-5 ":"lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5"
+      } gap-10 md:gap-10 lg:gap-10 xl:gap-10  2xl:gap-20`}>
         {data?.data?.skills?.map((a, index) => (
           <div
             key={index}
