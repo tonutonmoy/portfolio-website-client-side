@@ -132,6 +132,7 @@ const HomeContact = ({ contactProps }) => {
               data-aos-duration="1000"
             >
               <input
+              required
                 type="text"
                 placeholder="name"
                 name="user_name"
@@ -152,6 +153,7 @@ const HomeContact = ({ contactProps }) => {
               data-aos-duration="1000"
             >
               <input
+              required
                 type="email"
                 placeholder="email"
                 name="user_email"
@@ -172,6 +174,7 @@ const HomeContact = ({ contactProps }) => {
               data-aos-duration="1000"
             >
               <textarea
+              required
                 placeholder="message"
                 name="message"
                 className="textarea textarea-bordered textarea-lg w-full h-[100px]  md:h-[150px]
