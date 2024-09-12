@@ -25,7 +25,7 @@ w-[50%] mx-auto  justify-center'>
 
   <section>
     <p className="]   font-[400]  ">Copyright © 2023 <span className="text-blue-500">
-    Showmik Arifen Tonmoy</span>. All right reserved  </p>
+    Showmic Arefin Tonmoy</span>. All right reserved  </p>
   </section>
 </footer>
     );

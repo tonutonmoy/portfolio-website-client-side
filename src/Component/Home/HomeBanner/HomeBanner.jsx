@@ -12,7 +12,7 @@ const HomeBanner = () => {
          text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-700
         "
         >
-          I am Showmik Arifen Tonmoy{" "}
+          I am Showmic Arefin Tonmoy{" "}
         </h2>
 
         <div

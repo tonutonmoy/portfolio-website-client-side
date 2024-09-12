@@ -103,7 +103,7 @@ const Blog = ({ blogProps }) => {
 
               <div className="text-sm text-white flex items-center justify-between">
                 <div>
-                  <span>Showmik Arifen Tonmoy</span>
+                  <span>Showmic Arefin Tonmoy</span>
                 </div>
                 <div>
                   <span>{new Date(a?.updatedAt).toLocaleDateString()}</span>

@@ -49,7 +49,7 @@ const BlogDetail = () => {
               />
               <div>
                 <p className="font-semibold text-gray-700 text-sm">
-                  Showmik Arifen Tonmoy
+                  Showmic Arefin Tonmoy
                 </p>
                 <p className="font-semibold text-gray-600 text-xs">Editor</p>
               </div>
@@ -72,7 +72,7 @@ const BlogDetail = () => {
               </p>
               <p className="text-gray-700 text-sm">
                 <span className="font-[500] text-gray-700">Bio:</span> My self
-                Showmik Arifen Tonmoy. Experienced in both front-end and
+                Showmic Arefin Tonmoy. Experienced in both front-end and
                 back-end development, I specialize in creating robust, scalable
                 web applications.
               </p>

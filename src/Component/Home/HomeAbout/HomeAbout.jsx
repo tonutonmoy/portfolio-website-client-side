@@ -57,7 +57,7 @@ const HomeAbout = () => {
           </h3>
           <div className=" text-white text-[17px] md:text-[18px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] font-[400]  hover:scale-110 duration-[2s]">
             <p>
-              My name is Showmik arifen Tonmoy. I am a Full-Stack web developer
+              My name is Showmic Arefin Tonmoy. I am a Full-Stack web developer
               with nearly 2 years of learning experience. I have acquired a
               diverse skill set, including proficiency in MERN Stack, PERN
               Stack, and NEXT.js. I recently completed an intensive Full-Stack
