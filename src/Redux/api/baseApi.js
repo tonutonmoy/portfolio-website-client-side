@@ -3,8 +3,10 @@ import { getUserInfo } from "../../Component/Services/Action/auth.services";
 
 const baseQuery = fetchBaseQuery({
   // baseUrl: "http://localhost:5000/api",
+  // baseUrl:
+  //   "https://portfolio-website-server-side-production.up.railway.app/api",
   baseUrl:
-    "https://portfolio-website-server-side-production.up.railway.app/api",
+    "https://portfolio-website-server-side.vercel.app/api",
   credentials: "include",
   prepareHeaders: (headers) => {
     const token = getUserInfo();
